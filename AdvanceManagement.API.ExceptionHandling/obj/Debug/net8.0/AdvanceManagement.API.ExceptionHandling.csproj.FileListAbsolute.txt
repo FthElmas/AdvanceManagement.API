@@ -1,0 +1,11 @@
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.deps.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.AssemblyInfoInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.AssemblyInfo.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\refint\AdvanceManagement.API.ExceptionHandling.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\ref\AdvanceManagement.API.ExceptionHandling.dll

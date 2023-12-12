@@ -1,0 +1,15 @@
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\bin\Debug\net8.0\AdvanceManagement.API.DataAccess.deps.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\bin\Debug\net8.0\AdvanceManagement.API.DataAccess.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\bin\Debug\net8.0\AdvanceManagement.API.DataAccess.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\bin\Debug\net8.0\AdvanceManagement.API.Core.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\bin\Debug\net8.0\AdvanceManagement.API.Core.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.AssemblyInfo.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.csproj.CopyComplete
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\refint\AdvanceManagement.API.DataAccess.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\ref\AdvanceManagement.API.DataAccess.dll

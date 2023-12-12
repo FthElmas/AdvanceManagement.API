@@ -1,0 +1,11 @@
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Business.deps.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Business.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Business.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.AssemblyInfoInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.AssemblyInfo.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\refint\AdvanceManagement.API.Business.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\ref\AdvanceManagement.API.Business.dll

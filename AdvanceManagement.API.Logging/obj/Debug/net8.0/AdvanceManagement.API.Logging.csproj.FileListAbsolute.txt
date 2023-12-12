@@ -1,0 +1,11 @@
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\bin\Debug\net8.0\AdvanceManagement.API.Logging.deps.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\bin\Debug\net8.0\AdvanceManagement.API.Logging.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\bin\Debug\net8.0\AdvanceManagement.API.Logging.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.AssemblyInfoInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.AssemblyInfo.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\refint\AdvanceManagement.API.Logging.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\ref\AdvanceManagement.API.Logging.dll

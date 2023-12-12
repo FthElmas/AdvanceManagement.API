@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AdvanceManagement.API.ExceptionHandling/1.0.0": {
+        "runtime": {
+          "AdvanceManagement.API.ExceptionHandling.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AdvanceManagement.API.ExceptionHandling/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

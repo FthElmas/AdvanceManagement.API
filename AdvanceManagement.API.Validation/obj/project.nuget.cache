@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dbKncTnytmWC8JkKvvrHYkg2KmYxXsZUQ0kpEJfOQdBECZgEdxzV2RthZy2NzGxn3bH0mVLlCKsFTv/k9HHU1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Validation\\AdvanceManagement.API.Validation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fatih\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512"
+  ],
+  "logs": []
+}

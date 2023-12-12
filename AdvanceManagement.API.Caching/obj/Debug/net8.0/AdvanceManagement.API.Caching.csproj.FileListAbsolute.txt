@@ -1,0 +1,11 @@
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\bin\Debug\net8.0\AdvanceManagement.API.Caching.deps.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\bin\Debug\net8.0\AdvanceManagement.API.Caching.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\bin\Debug\net8.0\AdvanceManagement.API.Caching.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.AssemblyInfoInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.AssemblyInfo.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\refint\AdvanceManagement.API.Caching.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\ref\AdvanceManagement.API.Caching.dll
