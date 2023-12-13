@@ -12,21 +12,21 @@ namespace AdvanceManagement.API.Core.Entities
     public class User
     {
         [Key]
-        public int UserID { get; set; }
+        public int? UserID { get; set; }
         [Column("Username")]
-        public string Username { get; set; }
+        public string? Username { get; set; }
         [Column("PasswordHash")]
         public byte[] PasswordHash { get; set; }
         [Column("PasswordSalt")]
         public byte[] PasswordSalt { get; set; }
         [ForeignKey("Role")]
-        public int RoleID { get; set; }
+        public int? RoleID { get; set; }
 
         [Column]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
         [Column("IsActive")]
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
     }
 }

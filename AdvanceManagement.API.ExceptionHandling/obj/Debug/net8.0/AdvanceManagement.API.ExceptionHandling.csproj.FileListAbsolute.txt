@@ -9,3 +9,4 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Exceptio
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\refint\AdvanceManagement.API.ExceptionHandling.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\ref\AdvanceManagement.API.ExceptionHandling.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\obj\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.sourcelink.json

@@ -11,7 +11,7 @@ namespace AdvanceManagement.API.DataAccess.Helper
     public class ConnectionHelper
     {
         private IDbConnection _conf;
-        readonly string connectionString = "server = .; Database = GradingSystemDB; Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
+        readonly string connectionString = "server = .; Database = AdvanceManagementDB; Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
         public ConnectionHelper()
         {
 

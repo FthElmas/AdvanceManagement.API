@@ -14,21 +14,21 @@ namespace AdvanceManagement.API.Core.Entities
         [Key]
         public int WorkerID { get; set; }
         [Column("WorkerName")]
-        public string WorkerName { get; set; }
+        public string? WorkerName { get; set; }
         [Column("WorkerEmail")]
-        public string WorkerEmail { get; set; }
+        public string? WorkerEmail { get; set; }
         [Column("WorkerEmail")]
-        public string WorkerPhonenumber { get; set; }
+        public string? WorkerPhonenumber { get; set; }
         [ForeignKey("User")]
-        public int UserID { get; set; }
+        public int? UserID { get; set; }
         [ForeignKey("Unit")]
-        public int UnitID { get; set; }
+        public int? UnitID { get; set; }
         [ForeignKey("Title")]
-        public int TitleID { get; set; }
+        public int? TitleID { get; set; }
         [ForeignKey("Worker")]
-        public int ManagerID { get; set; }
+        public int? ManagerID { get; set; }
         [Column("IsActive")]
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
     }
 }

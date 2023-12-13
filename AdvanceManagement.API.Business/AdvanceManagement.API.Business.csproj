@@ -7,23 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AdvanceManagement.API.Core\AdvanceManagement.API.Core.csproj" />
     <ProjectReference Include="..\AdvanceManagement.API.DataAccess\AdvanceManagement.API.DataAccess.csproj" />
     <ProjectReference Include="..\AdvanceManagement.API.DataTransfer\AdvanceManagement.API.DataTransfer.csproj" />
+    <ProjectReference Include="..\AdvanceManagement.API.ExceptionHandling\AdvanceManagement.API.ExceptionHandling.csproj" />
     <ProjectReference Include="..\AdvanceManagement.API.Validation\AdvanceManagement.API.Validation.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\IAdvanceRequestStatus\" />
-    <Folder Include="Abstract\IApprovalStatus\" />
-    <Folder Include="Abstract\IFinanceManager\" />
-    <Folder Include="Abstract\IPaybackReceipt\" />
-    <Folder Include="Abstract\IPaymentReceipt\" />
-    <Folder Include="Abstract\IProject\" />
-    <Folder Include="Abstract\ITitle\" />
+    <Folder Include="Abstract\IAdvanceRequestStatusBusiness\" />
+    <Folder Include="Abstract\IApprovalStatusBusiness\" />
+    <Folder Include="Abstract\IFinanceManagerBusiness\" />
+    <Folder Include="Abstract\IPaybackReceiptBusiness\" />
+    <Folder Include="Abstract\IPaymentReceiptBusiness\" />
+    <Folder Include="Abstract\IProjectBusiness\" />
+    <Folder Include="Abstract\ITitleBusiness\" />
     <Folder Include="Abstract\ITitleAmountApprovalRule\" />
-    <Folder Include="Abstract\IUnit\" />
-    <Folder Include="Abstract\IUser\" />
-    <Folder Include="Abstract\IWorker\" />
+    <Folder Include="Abstract\IUnitBusiness\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
   </ItemGroup>
 
 </Project>

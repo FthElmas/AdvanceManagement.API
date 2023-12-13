@@ -17,7 +17,7 @@ namespace AdvanceManagement.API.DataAccess.Concrete.BaseAccess.Generic
     {
         public IDbConnection _connection;
 
-        readonly string connectionString = "server = .; Database = GradingSystemDB; Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
+        readonly string connectionString = "server = .; Database = AdvanceManagementDB; Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
 
         public GenericDataAccess()
         {

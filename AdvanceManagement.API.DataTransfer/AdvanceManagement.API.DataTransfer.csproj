@@ -16,8 +16,6 @@
     <Folder Include="DataTransferObjects\DTTitle\" />
     <Folder Include="DataTransferObjects\DTTitleAmountApprovalRule\" />
     <Folder Include="DataTransferObjects\DTUnit\" />
-    <Folder Include="DataTransferObjects\DTUser\" />
-    <Folder Include="DataTransferObjects\DTWorker\" />
   </ItemGroup>
 
 </Project>

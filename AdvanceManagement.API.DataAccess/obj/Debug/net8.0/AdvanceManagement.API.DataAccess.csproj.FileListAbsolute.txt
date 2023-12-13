@@ -13,3 +13,4 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAcce
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\refint\AdvanceManagement.API.DataAccess.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\ref\AdvanceManagement.API.DataAccess.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\obj\Debug\net8.0\AdvanceManagement.API.DataAccess.sourcelink.json

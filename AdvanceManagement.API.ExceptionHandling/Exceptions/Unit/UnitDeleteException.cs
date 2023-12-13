@@ -8,7 +8,7 @@ namespace AdvanceManagement.API.ExceptionHandling.Exceptions.Unit
 {
     public class UnitDeleteException : Exception
     {
-        public UnitDeleteException) { }
+        public UnitDeleteException() { }
         public UnitDeleteException(string message) : base(message) { }
         public UnitDeleteException(string message, Exception innerException) : base(message, innerException) { }
     }

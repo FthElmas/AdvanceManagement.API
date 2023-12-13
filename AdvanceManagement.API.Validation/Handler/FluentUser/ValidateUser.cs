@@ -13,7 +13,7 @@ namespace AdvanceManagement.API.Validation.Handler.FluentUser
         public ValidateUser()
         {
             RuleFor(x => x.Username).NotNull().NotEmpty();
-            
+            RuleFor(x => x.IsActive).NotNull();
         }
     }
 }

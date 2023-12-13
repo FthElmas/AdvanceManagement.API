@@ -9,3 +9,16 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\refint\AdvanceManagement.API.Business.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\ref\AdvanceManagement.API.Business.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.csproj.AssemblyReference.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.sourcelink.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Core.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.DataAccess.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.DataTransfer.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Validation.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.DataAccess.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.DataTransfer.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Validation.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.Core.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\obj\Debug\net8.0\AdvanceManagement.API.Business.csproj.CopyComplete
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.pdb

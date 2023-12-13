@@ -10,6 +10,6 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IAdvance
 {
     public interface IAdvanceDataAccess : IBaseDataAccess<Advance>
     {
-
+        Task<IEnumerable<Advance>> GetWorkerAdvance(int workerID);
     }
 }

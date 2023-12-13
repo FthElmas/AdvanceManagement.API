@@ -28,11 +28,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Core\\AdvanceManagement.API.Core.csproj": {
+                "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Core\\AdvanceManagement.API.Core.csproj"
+              },
               "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataAccess\\AdvanceManagement.API.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataAccess\\AdvanceManagement.API.DataAccess.csproj"
               },
               "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataTransfer\\AdvanceManagement.API.DataTransfer.csproj": {
                 "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataTransfer\\AdvanceManagement.API.DataTransfer.csproj"
+              },
+              "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.ExceptionHandling\\AdvanceManagement.API.ExceptionHandling.csproj": {
+                "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.ExceptionHandling\\AdvanceManagement.API.ExceptionHandling.csproj"
               },
               "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Validation\\AdvanceManagement.API.Validation.csproj": {
                 "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Validation\\AdvanceManagement.API.Validation.csproj"
@@ -49,6 +55,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -201,6 +213,61 @@
         "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataTransfer\\AdvanceManagement.API.DataTransfer.csproj",
         "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataTransfer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.ExceptionHandling\\AdvanceManagement.API.ExceptionHandling.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.ExceptionHandling\\AdvanceManagement.API.ExceptionHandling.csproj",
+        "projectName": "AdvanceManagement.API.ExceptionHandling",
+        "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.ExceptionHandling\\AdvanceManagement.API.ExceptionHandling.csproj",
+        "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.ExceptionHandling\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",

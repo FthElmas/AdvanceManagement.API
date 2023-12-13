@@ -10,13 +10,10 @@ using System.Threading.Tasks;
 
 namespace AdvanceManagement.API.Business.Concrete.Base
 {
-    public abstract class BaseBusiness<TEntity, T, TBaseDAL> where T : ValidationResult where TEntity : class where TBaseDAL : IBaseDataAccess<TEntity>
+    public abstract class BaseBusiness<TEntity, T, TBase> where T : ValidationResult where TEntity : class where TBase : AbstractValidator<TEntity>
     {
         
 
-        Task<T> GetById(int id)
-        {
-
-        }
+        
     }
 }

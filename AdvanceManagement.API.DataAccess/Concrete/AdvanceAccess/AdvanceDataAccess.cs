@@ -15,14 +15,19 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess
 {
     public class AdvanceDataAccess : BaseDataAccess<Advance>, IAdvanceDataAccess
     {
-    
-        //public async Task<Advance> AddAdvance(Advance advance)
-        //{
-        //    using var conn = _connectionHelper.CreateConnection();
-        //    var advanceQuery = "INSERT INTO [Advance] (AdvanceAmount, AdvanceExplanation, WorkerID, RequestDate, AdvanceRequestStatusID, AmountPaymentDate, PaybackDate, ProjectID) VALUES(@AdvanceAmount, @AdvanceExplanation, @WorkerID, @RequestDate, @AdvanceRequestStatusID, @AmountPaymentDate, @PaybackDate, @ProjectID)";
-        //    return await conn.QueryFirstOrDefaultAsync<Advance>(advanceQuery, new { advance.AdvanceAmount, advance.AdvanceExplanation, advance.WorkerID, advance.RequestDate, advance.AdvanceRequestStatusID, advance.AmountPaymentDate, advance.PaybackDate, advance.ProjectID });
+        private readonly ConnectionHelper _connectionHelper;
+        public AdvanceDataAccess()
+        {
+            _connectionHelper = new ConnectionHelper();
+        }
 
-        //}
+        public async Task<IEnumerable<Advance>> GetWorkerAdvance(int workerID)
+        {
+            using var conn = _connectionHelper.CreateConnection();
+            var advanceQuery = "select * from Advance where WorkerID = @WorkerID and IsActive = 1";
+            return await conn.QueryAsync<Advance>(advanceQuery, new {WorkerID = workerID });
+
+        }
 
 
     }

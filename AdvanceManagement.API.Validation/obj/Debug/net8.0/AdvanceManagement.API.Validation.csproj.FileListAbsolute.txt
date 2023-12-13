@@ -9,3 +9,8 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validati
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\obj\Debug\net8.0\refint\AdvanceManagement.API.Validation.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\obj\Debug\net8.0\AdvanceManagement.API.Validation.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\obj\Debug\net8.0\ref\AdvanceManagement.API.Validation.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\bin\Debug\net8.0\AdvanceManagement.API.Core.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\bin\Debug\net8.0\AdvanceManagement.API.Core.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\obj\Debug\net8.0\AdvanceManagement.API.Validation.csproj.AssemblyReference.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\obj\Debug\net8.0\AdvanceManagement.API.Validation.sourcelink.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\obj\Debug\net8.0\AdvanceManagement.API.Validation.csproj.CopyComplete

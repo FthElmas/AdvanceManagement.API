@@ -15,8 +15,4 @@
     <ProjectReference Include="..\AdvanceManagement.API.Core\AdvanceManagement.API.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Concrete\WorkerAccess\" />
-  </ItemGroup>
-
 </Project>

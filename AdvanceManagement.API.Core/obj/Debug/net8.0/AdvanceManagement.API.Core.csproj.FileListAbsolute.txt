@@ -9,3 +9,4 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\obj
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\obj\Debug\net8.0\refint\AdvanceManagement.API.Core.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\obj\Debug\net8.0\AdvanceManagement.API.Core.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\obj\Debug\net8.0\ref\AdvanceManagement.API.Core.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\obj\Debug\net8.0\AdvanceManagement.API.Core.sourcelink.json

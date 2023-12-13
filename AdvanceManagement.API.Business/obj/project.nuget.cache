@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "+ROHkTsOCjHpiI2O2QAt9WXGteUNbaTJRpYfGnO/9f5bYF3BZy8cd2wPmZ35X4KlPaeu37croJ+53UxGr7wurw==",
+  "dgSpecHash": "bRs68Tg2n2cAanti7h2T3MClZ4wpyz0UKsMe1BjiWbe0MhI4aO+lfs8JlMTu+AM2GTO2GuNoT4CLK5ADz9D9Zw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Business\\AdvanceManagement.API.Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fatih\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.2\\microsoft.data.sqlclient.5.1.2.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.identity.client\\4.47.2\\microsoft.identity.client.4.47.2.nupkg.sha512",

@@ -13,8 +13,7 @@ namespace AdvanceManagement.API.Validation.Handler.FluentWorker
         public ValidateWorker()
         {
             RuleFor(x => x.IsActive).NotNull();
-            RuleFor(x => x.UserID).NotNull().NotEqual(0);
-            RuleFor(x => x.TitleID).NotNull().NotEqual(0);
+
             RuleFor(x => x.WorkerPhonenumber).NotEmpty().NotNull();
             RuleFor(x => x.WorkerName).NotEmpty().NotNull();
             RuleFor(x => x.WorkerEmail).NotEmpty().NotNull();
