@@ -10,5 +10,6 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IProject
 {
     public interface IProjectDataAccess : IBaseDataAccess<Project>
     {
+        Task<IEnumerable<Project>> GetAllProjectOfWorker(int workerID);
     }
 }

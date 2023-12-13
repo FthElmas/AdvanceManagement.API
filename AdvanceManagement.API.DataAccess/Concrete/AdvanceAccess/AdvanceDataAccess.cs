@@ -29,6 +29,30 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess
 
         }
 
+        public async Task<bool> AddAdvanceWithStatus(Advance advance)
+        {
+            using var conn = _connectionHelper.CreateConnection();
+            using(IDbTransaction transaction = conn.BeginTransaction())
+            {
+                try
+                {
+                    string advanceQuery = "insert into Advance (AdvanceAmount, AdvanceExplanation, WorkerID, RequestDate, AmountPaymentDate, ProjectID, IsActive) OUTPUT INSERTED.* values (@AdvanceAmount, @AdvanceExplanation, @WorkerID, @RequestDate, @AmountPaymentDate, @ProjectID, @IsActive)";
+                    string statusQuery = "insert into AdvanceRequestStatus (AdvanceID, StatusName, StatusDescription, ApprovalStatusID, IsActive) values (@AdvanceID, 'Onay Bekliyor', 'Onay için beklemede', 5, 1)";
 
+
+                    var data = await transaction.Connection.QueryFirstOrDefaultAsync<Advance>(advanceQuery, new { AdvanceAmount = advance.AdvanceAmount, AdvanceExplanation = advance.AdvanceExplanation, WorkerID = advance.WorkerID, RequestDate = advance.RequestDate, AmountPaymentDate = advance.AmountPaymentDate, ProjectID = advance.ProjectID, IsActive = advance.IsActive });
+
+                    await transaction.Connection.QueryFirstOrDefaultAsync<AdvanceRequestStatus>(statusQuery, new { AdvanceID = data.AdvanceID });
+
+                    transaction.Commit();
+                    return true;
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    return false;
+                }
+            }
+        }
     }
 }

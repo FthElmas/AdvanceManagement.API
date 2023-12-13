@@ -10,5 +10,6 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IWorker
 {
     public interface IWorkerDataAccess : IBaseDataAccess<Worker>
     {
+        
     }
 }

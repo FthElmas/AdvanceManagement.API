@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace AdvanceManagement.API.Core.Entities
 {
-    public record AdvanceRequestStatus
+    [Table("[AdvanceRequestStatus]")]
+    public class AdvanceRequestStatus
     {
         [Key]
         public int AdvanceRequestStatusID { get; set; }

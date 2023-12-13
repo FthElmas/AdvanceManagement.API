@@ -10,6 +10,6 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IAdvanceRequestStatus
 {
     public interface IAdvanceRequestStatusDataAccess : IBaseDataAccess<AdvanceRequestStatus>
     {
-
+        Task<bool> AddAdvanceRequest(AdvanceRequestStatus request, string approvalName);
     }
 }

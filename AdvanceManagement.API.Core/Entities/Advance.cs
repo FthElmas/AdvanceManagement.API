@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace AdvanceManagement.API.Core.Entities
 {
     [Table("[Advance]")]
-    public record Advance
+    public class Advance
     {
         [Key]
         public int AdvanceID { get; set; }
@@ -29,5 +29,10 @@ namespace AdvanceManagement.API.Core.Entities
         [ForeignKey("Project")]
         public int ProjectID { get; set; }
 
+        [Column("CreatedDate")]
+        public DateTime CreatedDate { get; set; }
+
+        [Column("IsActive")]
+        public bool IsActive { get; set; }
     }
 }

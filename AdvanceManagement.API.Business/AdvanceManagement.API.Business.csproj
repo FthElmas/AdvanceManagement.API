@@ -20,7 +20,6 @@
     <Folder Include="Abstract\IFinanceManagerBusiness\" />
     <Folder Include="Abstract\IPaybackReceiptBusiness\" />
     <Folder Include="Abstract\IPaymentReceiptBusiness\" />
-    <Folder Include="Abstract\IProjectBusiness\" />
     <Folder Include="Abstract\ITitleBusiness\" />
     <Folder Include="Abstract\ITitleAmountApprovalRule\" />
     <Folder Include="Abstract\IUnitBusiness\" />
