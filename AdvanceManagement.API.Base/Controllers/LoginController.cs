@@ -34,7 +34,8 @@ namespace AdvanceManagement.API.Base.Controllers
                 Expires = DateTime.Now.AddMinutes(20),
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name,dto.Username)
+                    new Claim(ClaimTypes.Name,dto.Username),
+                    new Claim(ClaimTypes.Role, dto.Role.RoleName)
                 }),
                 Issuer = issuer,
                 Audience = audience,

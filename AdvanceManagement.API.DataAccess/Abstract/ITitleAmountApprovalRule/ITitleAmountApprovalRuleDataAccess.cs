@@ -10,5 +10,6 @@ namespace AdvanceManagement.API.DataAccess.Abstract.ITitleAmountApprovalRule
 {
     public interface ITitleAmountApprovalRuleDataAccess : IBaseDataAccess<TitleAmountApprovalRule>
     {
+        Task<IEnumerable<TitleAmountApprovalRule>> GetRuleAccordingToAmount(decimal amount);
     }
 }

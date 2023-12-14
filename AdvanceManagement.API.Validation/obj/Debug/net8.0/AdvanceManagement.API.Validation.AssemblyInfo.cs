@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvanceManagement.API.Validation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b587da926e4dd78231252b9eaa921c9bf58709b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58bfab0d380da52af2d915f1b60847807dc59651")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvanceManagement.API.Validation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvanceManagement.API.Validation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

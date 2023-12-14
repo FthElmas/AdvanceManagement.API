@@ -31,5 +31,9 @@ namespace AdvanceManagement.API.Core.Entities
 
         [Column]
         public bool IsActive { get; set; }
+
+
+        [NotMapped]
+        public Title Title { get; set; }
     }
 }

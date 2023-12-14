@@ -10,3 +10,7 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTran
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\obj\Debug\net8.0\AdvanceManagement.API.DataTransfer.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\obj\Debug\net8.0\ref\AdvanceManagement.API.DataTransfer.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\obj\Debug\net8.0\AdvanceManagement.API.DataTransfer.sourcelink.json
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\bin\Debug\net8.0\AdvanceManagement.API.Core.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\bin\Debug\net8.0\AdvanceManagement.API.Core.pdb
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\obj\Debug\net8.0\AdvanceManagement.API.DataTransfer.csproj.AssemblyReference.cache
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\obj\Debug\net8.0\AdvanceManagement.API.DataTransfer.csproj.CopyComplete

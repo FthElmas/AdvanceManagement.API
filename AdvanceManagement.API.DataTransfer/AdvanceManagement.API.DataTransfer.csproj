@@ -13,8 +13,11 @@
     <Folder Include="DataTransferObjects\DTPaybackReceipt\" />
     <Folder Include="DataTransferObjects\DTPaymentReceipt\" />
     <Folder Include="DataTransferObjects\DTTitle\" />
-    <Folder Include="DataTransferObjects\DTTitleAmountApprovalRule\" />
     <Folder Include="DataTransferObjects\DTUnit\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdvanceManagement.API.Core\AdvanceManagement.API.Core.csproj" />
   </ItemGroup>
 
 </Project>

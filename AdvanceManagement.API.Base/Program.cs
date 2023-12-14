@@ -1,12 +1,16 @@
 using AdvanceManagement.API.Business.Abstract.IAdvanceBusiness;
+using AdvanceManagement.API.Business.Abstract.ITitleAmountApprovalRule;
 using AdvanceManagement.API.Business.Abstract.IUserBusiness;
 using AdvanceManagement.API.Business.Concrete.AdvanceBusiness;
+using AdvanceManagement.API.Business.Concrete.TitleAmountApprovalRuleBusiness;
 using AdvanceManagement.API.Business.Concrete.UserBusiness;
 using AdvanceManagement.API.DataAccess.Abstract.IAdvance;
 using AdvanceManagement.API.DataAccess.Abstract.IBase;
+using AdvanceManagement.API.DataAccess.Abstract.ITitleAmountApprovalRule;
 using AdvanceManagement.API.DataAccess.Abstract.IUser;
 using AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess;
 using AdvanceManagement.API.DataAccess.Concrete.BaseAccess;
+using AdvanceManagement.API.DataAccess.Concrete.TitleAmountApprovalRuleAccess;
 using AdvanceManagement.API.DataAccess.Concrete.UserAccess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +30,8 @@ builder.Services.AddScoped<IAdvanceDataAccess, AdvanceDataAccess>();
 builder.Services.AddScoped<IAdvanceBusiness, AdvanceBusiness>();
 builder.Services.AddScoped<IUserDataAccess, UserDataAccess>();
 builder.Services.AddScoped<IUserBusiness, UserBusiness>();
+builder.Services.AddScoped<ITitleAmountApprovalRuleDataAccess, TitleAmountApprovalRuleDataAccess>();
+builder.Services.AddScoped<ITitleAmountApprovalRuleBusiness, TitleAmountApprovalRuleBusiness>();
 
 var configuration = new ConfigurationBuilder()
     .AddInMemoryCollection(new Dictionary<string, string?>()

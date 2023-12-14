@@ -51,5 +51,30 @@ namespace AdvanceManagement.API.Core.Entities
 
         [Column("CreatedBy")]
         public int CreatedBy { get; set; }
+
+
+
+
+        #region References
+        [NotMapped]
+        public Advance Advance { get; set; }
+
+        [NotMapped]
+        public FinanceManager FinanceManager { get; set; }
+
+        [NotMapped]
+        public ApprovalStatus ApprovalStatus { get; set; }
+
+        [NotMapped]
+        public Worker Worker { get; set; }
+
+        [NotMapped]
+        public Project Project { get; set; }
+
+        [NotMapped]
+        public Title Title { get; set; }
+        #endregion
+
+
     }
 }

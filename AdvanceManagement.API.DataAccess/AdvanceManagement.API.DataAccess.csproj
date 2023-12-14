@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AdvanceManagement.API.Core\AdvanceManagement.API.Core.csproj" />
+    <ProjectReference Include="..\AdvanceManagement.API.DataTransfer\AdvanceManagement.API.DataTransfer.csproj" />
   </ItemGroup>
 
 </Project>

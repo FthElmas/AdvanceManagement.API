@@ -865,6 +865,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AdvanceManagement.API.Core": "1.0.0",
+          "AdvanceManagement.API.DataTransfer": "1.0.0",
           "Dapper": "2.1.24",
           "Microsoft.Data.SqlClient": "5.1.2"
         },
@@ -878,6 +879,9 @@
       "AdvanceManagement.API.DataTransfer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AdvanceManagement.API.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/AdvanceManagement.API.DataTransfer.dll": {}
         },

@@ -9,6 +9,7 @@
       "AdvanceManagement.API.DataAccess/1.0.0": {
         "dependencies": {
           "AdvanceManagement.API.Core": "1.0.0",
+          "AdvanceManagement.API.DataTransfer": "1.0.0",
           "Dapper": "2.1.24",
           "Microsoft.Data.SqlClient": "5.1.2"
         },
@@ -418,6 +419,14 @@
         "runtime": {
           "AdvanceManagement.API.Core.dll": {}
         }
+      },
+      "AdvanceManagement.API.DataTransfer/1.0.0": {
+        "dependencies": {
+          "AdvanceManagement.API.Core": "1.0.0"
+        },
+        "runtime": {
+          "AdvanceManagement.API.DataTransfer.dll": {}
+        }
       }
     }
   },
@@ -715,6 +724,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "AdvanceManagement.API.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AdvanceManagement.API.DataTransfer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

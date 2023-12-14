@@ -162,6 +162,9 @@
             "projectReferences": {
               "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Core\\AdvanceManagement.API.Core.csproj": {
                 "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Core\\AdvanceManagement.API.Core.csproj"
+              },
+              "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataTransfer\\AdvanceManagement.API.DataTransfer.csproj": {
+                "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataTransfer\\AdvanceManagement.API.DataTransfer.csproj"
               }
             }
           }
@@ -228,7 +231,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Core\\AdvanceManagement.API.Core.csproj": {
+                "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Core\\AdvanceManagement.API.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
