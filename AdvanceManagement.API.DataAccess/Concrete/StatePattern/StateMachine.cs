@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvanceManagement.API.Business.Concrete.StatePattern
+namespace AdvanceManagement.API.DataAccess.Concrete.StatePattern
 {
     public class StateMachine
     {

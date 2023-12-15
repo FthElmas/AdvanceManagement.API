@@ -1,5 +1,6 @@
 ﻿using AdvanceManagement.API.Business.Abstract.IAdvanceBusiness;
 using AdvanceManagement.API.Business.Abstract.ITitleAmountApprovalRule;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvance;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdvanceManagement.API.Base.Controllers
@@ -17,9 +18,20 @@ namespace AdvanceManagement.API.Base.Controllers
         }
 
         [HttpGet("~/api/getWithID")]
-        public async Task<IActionResult> GetAllWithID()
+        public async Task<IActionResult> GetAllWithID(int workerID)
         {
-            var data = 
+            var data = await buss.GetWorkerAdvance(workerID);
+            return Ok(data);
+        }
+
+        [HttpPost("~/api/advanceRequest")]
+        public async Task<IActionResult> AddAdvance([FromBody]AdvanceAddDTO advance)
+        {
+            var data = await buss.AddAdvanceWithStatus(advance);
+            if (data)
+                return Ok(data);
+            else
+                return BadRequest();
         }
     }
 }

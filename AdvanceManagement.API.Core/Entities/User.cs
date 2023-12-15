@@ -28,5 +28,8 @@ namespace AdvanceManagement.API.Core.Entities
         [Column("IsActive")]
         public bool? IsActive { get; set; }
 
+
+        public Role Role { get; set; }
+
     }
 }

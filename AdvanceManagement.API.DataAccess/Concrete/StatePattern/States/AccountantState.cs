@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvanceManagement.API.Business.Concrete.StatePattern.States
+namespace AdvanceManagement.API.DataAccess.Concrete.StatePattern.States
 {
-    public class DirectorState : State
+    public class AccountantState : State
     {
-        public DirectorState(StateMachine stateMachine) : base(stateMachine)
+        public AccountantState(StateMachine stateMachine) : base(stateMachine)
         {
+
         }
 
         public override void EnterState()

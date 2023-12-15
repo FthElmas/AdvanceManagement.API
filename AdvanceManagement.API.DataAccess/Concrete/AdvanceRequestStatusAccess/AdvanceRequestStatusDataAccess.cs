@@ -15,10 +15,12 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceRequestStatusAccess
     public class AdvanceRequestStatusDataAccess : BaseDataAccess<AdvanceRequestStatus>, IAdvanceRequestStatusDataAccess
     {
         private readonly ConnectionHelper _connectionHelper;
+
         public AdvanceRequestStatusDataAccess()
         {
             _connectionHelper = new ConnectionHelper();
         }
+
 
         public async Task<IEnumerable<AdvanceRequestStatus>> GetWorkerAdvance(int workerID)
         {
@@ -44,30 +46,31 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceRequestStatusAccess
         }
 
 
-        public async Task<bool> AddAdvanceRequest(AdvanceRequestStatus request, string approvalName)
+        public async Task<bool> AddAdvanceRequest(AdvanceRequestStatus request, string approvalName, IDbTransaction _transaction)
         {
-            using var conn = _connectionHelper.CreateConnection();
-            using(IDbTransaction transaction = conn.BeginTransaction())
-            {
+            
                 try
                 {
                     string queryApproval = "select * from ApprovalStatus where ApprovalName = @ApprovalName";
                     string query = "insert into AdvanceRequestStatus (AdvanceID, StatusName, StatusDescription, ApprovedAmount, ApprovingRejectedID, ProcessDate ,ApprovalStatusID, IsActive) values (@AdvanceID, @StatusName, @StatusDescription, @ApprovedAmount, @ApprovingRejectedID, @ProcessDate, @ApprovalStatusID, @IsActive)";
 
-                    var data = await transaction.Connection.QueryFirstOrDefaultAsync<ApprovalStatus>(queryApproval, new { ApprovalName = approvalName });
-                    await transaction.Connection.ExecuteAsync(query, new { AdvanceID = request.AdvanceID, StatusName = request.StatusName, StatusDescription = request.StatusDescription, ApprovedAmount = request.ApprovedAmount, ApprovingRejectedID = request.ApprovingRejectedID, ProcessDate = request.ProcessDate, ApprovalStatusID = data.ApprovalStatusID, IsActive = request.IsActive });
-
-                    transaction.Commit();
+                    var data =  await _transaction.Connection.QueryFirstOrDefaultAsync<ApprovalStatus>(queryApproval, new { ApprovalName = approvalName }, _transaction);
+                     await _transaction.Connection.ExecuteAsync(query, new { AdvanceID = request.AdvanceID, StatusName = request.StatusName, StatusDescription = request.StatusDescription, ApprovedAmount = request.ApprovedAmount, ApprovingRejectedID = request.ApprovingRejectedID, ProcessDate = request.ProcessDate, ApprovalStatusID = data.ApprovalStatusID, IsActive = request.IsActive }, _transaction);
+                
                     return true;
                 }
                 catch
                 {
-                    transaction.Rollback();
-                    return false;
+                
+                return false;
                 }
-            }
-
             
+                
+            
+
+
         }
+
+        
     }
 }

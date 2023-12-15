@@ -71,8 +71,8 @@ namespace AdvanceManagement.API.DataAccess.Concrete.UserAccess
             try
             {
                 using var conn = _connectionHelper.CreateConnection();
-                string query = "Select * from [User]\r\nwhere Username = @Username";
-                return conn.QueryFirstOrDefault<User>(query, new { Username = username });
+                string query = "select u.UserID, u.PasswordSalt, u.PasswordHash, u.Username, r.RoleID, r.RoleName from [User] as u\r\njoin [Role] r on r.RoleID = u.RoleID\r\nwhere Username = @Username";
+                return conn.Query<User, Role, User>(query, (u, r) => { u.Role = r; return u; }, new { Username = username }, splitOn: "RoleID").FirstOrDefault();
             }
             catch
             {

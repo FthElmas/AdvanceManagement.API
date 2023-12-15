@@ -1,3 +1,4 @@
+using AdvanceManagement.API.Base.Middlewares;
 using AdvanceManagement.API.Business.Abstract.IAdvanceBusiness;
 using AdvanceManagement.API.Business.Abstract.ITitleAmountApprovalRule;
 using AdvanceManagement.API.Business.Abstract.IUserBusiness;
@@ -79,7 +80,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 app.UseAuthentication();
-
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.MapControllers();
 

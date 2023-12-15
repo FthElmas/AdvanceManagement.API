@@ -51,12 +51,13 @@ namespace AdvanceManagement.API.Business.Concrete.UserBusiness
 
    
 
-        public async Task<bool> Login(string username, string password)
+        public async Task<UserDTO> Login(string username, string password)
         {
             if(username != string.Empty && password != string.Empty)
             {
-                await _dal.Login(username, password);
-                return true;
+                var data = await _dal.Login(username, password);
+                MyMapper<User, UserDTO> mapper = new MyMapper<User, UserDTO>();
+                return mapper.Map(data);
             }
             else
             {

@@ -1,4 +1,6 @@
 ﻿using AdvanceManagement.API.Core.Entities;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvance;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvanceRequestStatus;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,8 @@ namespace AdvanceManagement.API.Business.Abstract.IAdvanceBusiness
 {
     public interface IAdvanceBusiness
     {
-        Task<IEnumerable<Advance>> GetAll();
+        Task<List<AdvanceSelectDTO>> GetAll();
+        Task<List<AdvanceSelectDTO>> GetWorkerAdvance(int workerID);
+        Task<bool> AddAdvanceWithStatus(AdvanceAddDTO advance);
     }
 }

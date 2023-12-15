@@ -34,5 +34,28 @@ namespace AdvanceManagement.API.Core.Entities
 
         [Column("IsActive")]
         public bool IsActive { get; set; }
+
+
+
+
+        #region References
+        [NotMapped]
+        public AdvanceRequestStatus AdvanceRequestStatus { get; set; }
+
+        [NotMapped]
+        public FinanceManager FinanceManager { get; set; }
+
+        [NotMapped]
+        public ApprovalStatus ApprovalStatus { get; set; }
+
+        [NotMapped]
+        public Worker Worker { get; set; }
+
+        [NotMapped]
+        public Project Project { get; set; }
+
+        [NotMapped]
+        public Title Title { get; set; }
+        #endregion
     }
 }

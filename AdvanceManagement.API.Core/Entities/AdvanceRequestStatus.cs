@@ -18,39 +18,39 @@ namespace AdvanceManagement.API.Core.Entities
         public int AdvanceID { get; set; }
 
         [Column("StatusName")]
-        public string StatusName { get; set; }
+        public string? StatusName { get; set; }
 
         [Column("StatusDescription")]
-        public string StatusDescription { get; set; }
+        public string? StatusDescription { get; set; }
 
         [Column("ApprovedAmount")]
         public decimal ApprovedAmount { get; set; }
 
         [ForeignKey("Worker")]
-        public int ApprovingRejectedID { get; set; }
+        public int? ApprovingRejectedID { get; set; }
 
         [ForeignKey("ApprovalStatus")]
-        public int ApprovalStatusID { get; set; }
+        public int? ApprovalStatusID { get; set; }
 
 
         [Column("ProcessDate")]
-        public DateTime ProcessDate { get; set; }
+        public DateTime? ProcessDate { get; set; }
 
         [Column("IsActive")]
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
         [Column("ModifiedBy")]
-        public int ModifiedBy { get; set; }
+        public int? ModifiedBy { get; set; }
 
         [Column("CreatedDate")]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
 
         [Column("ModifiedDate")]
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
 
         [Column("CreatedBy")]
-        public int CreatedBy { get; set; }
+        public int? CreatedBy { get; set; }
 
 
 
