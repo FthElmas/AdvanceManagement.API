@@ -9,6 +9,7 @@ namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTPaymentReceip
 {
     public record PaymentReceiptAddDTO
     {
+        public int PaymentReceiptID { get; set; }
         public DateTime ReceiptDate { get; set; }
 
         public string ReceiptDescription { get; set; }
@@ -16,10 +17,10 @@ namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTPaymentReceip
         public int AdvanceID { get; set; }
 
 
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
-        public int CreatedBy { get; set; }
+        public int? CreatedBy { get; set; }
 
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
     }
 }

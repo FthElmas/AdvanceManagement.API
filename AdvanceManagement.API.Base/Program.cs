@@ -1,13 +1,16 @@
+using AdvanceManagement.API.Base.Filters;
 using AdvanceManagement.API.Base.Middlewares;
 using AdvanceManagement.API.Business.Abstract.IAdvanceBusiness;
 using AdvanceManagement.API.Business.Abstract.IAdvanceRequestStatusBusiness;
 using AdvanceManagement.API.Business.Abstract.IFinanceManagerBusiness;
+using AdvanceManagement.API.Business.Abstract.IPaymentReceiptBusiness;
 using AdvanceManagement.API.Business.Abstract.IProjectBusiness;
 using AdvanceManagement.API.Business.Abstract.ITitleAmountApprovalRule;
 using AdvanceManagement.API.Business.Abstract.IUserBusiness;
 using AdvanceManagement.API.Business.Concrete.AdvanceBusiness;
 using AdvanceManagement.API.Business.Concrete.AdvanceRequestBusiness;
 using AdvanceManagement.API.Business.Concrete.FinanceManagerBusiness;
+using AdvanceManagement.API.Business.Concrete.PaymentReceiptBusiness;
 using AdvanceManagement.API.Business.Concrete.ProjectBusiness;
 using AdvanceManagement.API.Business.Concrete.TitleAmountApprovalRuleBusiness;
 using AdvanceManagement.API.Business.Concrete.UserBusiness;
@@ -15,6 +18,7 @@ using AdvanceManagement.API.DataAccess.Abstract.IAdvance;
 using AdvanceManagement.API.DataAccess.Abstract.IAdvanceRequestStatus;
 using AdvanceManagement.API.DataAccess.Abstract.IBase;
 using AdvanceManagement.API.DataAccess.Abstract.IFinanceManager;
+using AdvanceManagement.API.DataAccess.Abstract.IPaymentReceipt;
 using AdvanceManagement.API.DataAccess.Abstract.IProject;
 using AdvanceManagement.API.DataAccess.Abstract.ITitleAmountApprovalRule;
 using AdvanceManagement.API.DataAccess.Abstract.IUser;
@@ -22,6 +26,7 @@ using AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess;
 using AdvanceManagement.API.DataAccess.Concrete.AdvanceRequestStatusAccess;
 using AdvanceManagement.API.DataAccess.Concrete.BaseAccess;
 using AdvanceManagement.API.DataAccess.Concrete.FinanceManagerAccess;
+using AdvanceManagement.API.DataAccess.Concrete.PaymentReceiptAccess;
 using AdvanceManagement.API.DataAccess.Concrete.ProjectAccess;
 using AdvanceManagement.API.DataAccess.Concrete.StatePattern;
 using AdvanceManagement.API.DataAccess.Concrete.TitleAmountApprovalRuleAccess;
@@ -44,6 +49,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddScoped<AdvanceActionFilter>();
 builder.Services.AddScoped<ApprovalStateMachine>();
 builder.Services.AddScoped<ConnectionHelper>();
 builder.Services.AddScoped<IAdvanceDataAccess, AdvanceDataAccess>();
@@ -58,9 +65,12 @@ builder.Services.AddScoped<IAdvanceRequestStatusBusiness, AdvanceRequestStatusBu
 builder.Services.AddScoped<IAdvanceRequestStatusDataAccess, AdvanceRequestStatusDataAccess>();
 builder.Services.AddScoped<IFinanceManagerBusiness, FinanceManagerBusiness>();
 builder.Services.AddScoped<IFinanceManagerDataAccess, FinanceManagerDataAccess>();
+builder.Services.AddScoped<IPaymentReceiptDataAccess, PaymentReceiptDataAccess>();
+builder.Services.AddScoped<IPaymentReceiptBusiness, PaymentReceiptBusiness>();
 builder.Services.AddScoped<ValidateFinanceManager>();
 builder.Services.AddScoped<ValidateAdvanceRequestStatus>();
 builder.Services.AddScoped<ValidatePaymentReceipt>();
+
 
 var configuration = new ConfigurationBuilder()
     .AddInMemoryCollection(new Dictionary<string, string?>()

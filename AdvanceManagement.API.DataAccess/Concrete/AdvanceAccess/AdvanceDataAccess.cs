@@ -150,5 +150,17 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess
                 }
             }
         }
+
+
+        public async Task<Advance> FindAdvance(int workerID, int projectID)
+        {
+            using var conn = _connectionHelper.CreateConnection();
+
+            string query = "select a.* from Advance a\r\njoin Worker w ON a.WorkerID = w.WorkerID\r\njoin Project p ON a.ProjectID = p.ProjectID\r\nwhere w.WorkerID = @WorkerID and p.ProjectID = @ProjectID";
+
+
+
+            return await conn.QueryFirstOrDefaultAsync<Advance>(query, new { WorkerID = workerID, ProjectID = projectID });
+        }
     }
 }

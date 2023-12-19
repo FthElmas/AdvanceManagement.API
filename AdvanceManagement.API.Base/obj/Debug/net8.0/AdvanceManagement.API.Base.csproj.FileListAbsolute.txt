@@ -82,3 +82,7 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\AdvanceManagement.API.ExceptionHandling.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\nlog.config
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\NLog.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\NLog.Database.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\bin\Debug\net8.0\NLog.Extensions.Logging.dll

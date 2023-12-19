@@ -1,4 +1,5 @@
-﻿using AdvanceManagement.API.Business.Abstract.IAdvanceBusiness;
+﻿using AdvanceManagement.API.Base.Filters;
+using AdvanceManagement.API.Business.Abstract.IAdvanceBusiness;
 using AdvanceManagement.API.Business.Abstract.ITitleAmountApprovalRule;
 using AdvanceManagement.API.Core.Entities;
 using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvance;
@@ -25,6 +26,7 @@ namespace AdvanceManagement.API.Base.Controllers
             return Ok(data);
         }
 
+        [ServiceFilter(typeof(AdvanceActionFilter))]
         [HttpPost("~/api/advanceRequest")]
         public async Task<IActionResult> AddAdvance([FromBody]AdvanceAddDTO advance)
         {

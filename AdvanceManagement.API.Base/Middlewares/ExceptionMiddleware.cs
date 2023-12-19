@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using NLog;
 
 namespace AdvanceManagement.API.Base.Middlewares
 {
@@ -23,10 +24,12 @@ namespace AdvanceManagement.API.Base.Middlewares
             {
                 _logger.LogError(ex, "An unhandled exception has occurred.");
 
+                var logger = NLog.LogManager.GetLogger("database");
+                logger.Error(ex, "An unhandled exception has occurred.");
+
                 httpContext.Response.ContentType = "application/json";
                 httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
-                
                 await httpContext.Response.WriteAsync("Internal Server Error");
             }
         }

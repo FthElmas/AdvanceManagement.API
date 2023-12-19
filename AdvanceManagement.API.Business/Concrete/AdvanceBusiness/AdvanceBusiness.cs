@@ -120,6 +120,20 @@ namespace AdvanceManagement.API.Business.Concrete.AdvanceBusiness
                 throw new AdvanceSelectException("Encountered a problem with select", ex);
             }
         }
+
+        public async Task<AdvanceSelectDTO> FindAdvance(int workerID, int projectID)
+        {
+            try
+            {
+                var data = await dal.FindAdvance(workerID, projectID);
+                MyMapper<Advance, AdvanceSelectDTO> mapper = new MyMapper<Advance, AdvanceSelectDTO>();
+                return mapper.Map(data);
+            }
+            catch (Exception ex)
+            {
+                throw new AdvanceSelectException("Encountered a problem with select", ex);
+            }
+        }
     }
 }
     

@@ -24,19 +24,19 @@ namespace AdvanceManagement.API.Core.Entities
         public int AdvanceID { get; set; }
 
         [Column("IsActive")]
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
         [Column("ModifiedBy")]
-        public int ModifiedBy { get; set; }
+        public int? ModifiedBy { get; set; }
 
         [Column("CreatedBy")]
-        public int CreatedBy { get; set; }
+        public int? CreatedBy { get; set; }
 
         [Column("ModifiedDate")]
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
 
         [Column("CreatedDate")]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
 
 

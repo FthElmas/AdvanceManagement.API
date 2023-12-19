@@ -17,5 +17,6 @@ namespace AdvanceManagement.API.Business.Abstract.IAdvanceBusiness
         Task<List<AdvanceSelectDTO>> BringAllAdvanceForFinance();
         Task<AdvanceSelectDTO> GetAdvanceByID(int advanceID);
         Task<IEnumerable<AdvanceSelectDTO>> BringAllAdvanceForAccountant();
+        Task<AdvanceSelectDTO> FindAdvance(int workerID, int projectID);
     }
 }
