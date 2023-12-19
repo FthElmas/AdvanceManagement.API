@@ -12,5 +12,8 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IAdvanceRequestStatus
     public interface IAdvanceRequestStatusDataAccess : IBaseDataAccess<AdvanceRequestStatus>
     {
         Task<bool> AddAdvanceRequest(AdvanceRequestStatus request, string approvalName, IDbTransaction _transaction);
+        Task<IEnumerable<AdvanceRequestStatus>> GetWorkerAdvance(int advanceID);
+        Task<IEnumerable<AdvanceRequestStatus>> GetRequestWithTitle(int titleID);
+        Task<IEnumerable<AdvanceRequestStatus>> GetRequestForUnitManager(int titleID);
     }
 }

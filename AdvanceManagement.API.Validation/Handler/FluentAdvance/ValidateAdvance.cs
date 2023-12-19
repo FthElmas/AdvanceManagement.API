@@ -13,10 +13,9 @@ namespace AdvanceManagement.API.Validation.Handler.FluentAdvance
         public ValidateAdvance()
         {
             RuleFor(x => x.AdvanceAmount).GreaterThan(0).NotNull();
-            RuleFor(x => x.AmountPaymentDate).NotNull();
             RuleFor(x => x.RequestDate).NotNull();
             RuleFor(x => x.WorkerID).NotEqual(0).NotNull();
-
+            RuleFor(x => x.ProjectID).NotEqual(0).NotNull();
         }
     }
 }

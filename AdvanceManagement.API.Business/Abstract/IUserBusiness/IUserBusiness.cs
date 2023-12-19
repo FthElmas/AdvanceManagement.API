@@ -1,4 +1,5 @@
 ﻿using AdvanceManagement.API.Core.Entities;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTPageAuthorization;
 using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTUser;
 using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTWorker;
 using System;
@@ -11,7 +12,9 @@ namespace AdvanceManagement.API.Business.Abstract.IUserBusiness
 {
     public interface IUserBusiness
     {
-        Task<bool> AddUser(UserDTO user, WorkerAddDTO worker, string password);
+        Task<bool> AddUser(UserAddDTO user, WorkerAddDTO worker, string password);
         Task<UserDTO> Login(string username, string password);
+
+        Task<List<PageAuthorizationSelectDTO>> GetAllAuthorizationOfPerson(string username);
     }
 }

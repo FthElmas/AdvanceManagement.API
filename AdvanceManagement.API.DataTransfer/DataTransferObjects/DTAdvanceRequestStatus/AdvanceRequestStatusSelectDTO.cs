@@ -6,71 +6,83 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvance;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTApprovalStatus;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTFinanceManager;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTProject;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTTitle;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTWorker;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTUnit;
 
 namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvanceRequestStatus
 {
     public record AdvanceRequestStatusSelectDTO
     {
+
         public int AdvanceRequestStatusID { get; set; }
 
 
         public int AdvanceID { get; set; }
 
 
-        public string StatusName { get; set; }
+        public string? StatusName { get; set; }
 
 
-        public string StatusDescription { get; set; }
+        public string? StatusDescription { get; set; }
 
 
         public decimal ApprovedAmount { get; set; }
 
 
-        public int ApprovingRejectedID { get; set; }
+        public int? ApprovingRejectedID { get; set; }
 
 
-        public int ApprovalStatusID { get; set; }
-
-
-
-        public DateTime ProcessDate { get; set; }
-
-
-        public bool IsActive { get; set; }
-
-
-        public int ModifiedBy { get; set; }
-
-
-        public DateTime CreatedDate { get; set; }
+        public int? ApprovalStatusID { get; set; }
 
 
 
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ProcessDate { get; set; }
 
-        public int CreatedBy { get; set; }
 
+        public bool? IsActive { get; set; }
+
+
+        public int? ModifiedBy { get; set; }
+
+        public DateTime? CreatedDate { get; set; }
+
+
+
+        public DateTime? ModifiedDate { get; set; }
+
+
+        public int? CreatedBy { get; set; }
 
 
 
         #region References
         [NotMapped]
-        public Advance Advance { get; set; }
+        public AdvanceSelectDTO Advance { get; set; }
+
 
         [NotMapped]
-        public FinanceManager FinanceManager { get; set; }
+        public FinanceManagerSelectDTO FinanceManager { get; set; }
 
         [NotMapped]
-        public ApprovalStatus ApprovalStatus { get; set; }
+        public ApprovalStatusSelectDTO ApprovalStatus { get; set; }
 
         [NotMapped]
-        public Worker Worker { get; set; }
+        public WorkerSelectDTO Worker { get; set; }
+        [NotMapped]
+        public WorkerSelectDTO AdvanceWorker { get; set; }
 
         [NotMapped]
-        public Project Project { get; set; }
+        public ProjectSelectDTO Project { get; set; }
 
         [NotMapped]
-        public Title Title { get; set; }
+        public TitleSelectDTO Title { get; set; }
+        [NotMapped]
+        public UnitSelectDTO Unit { get; set; }
         #endregion
     }
 }

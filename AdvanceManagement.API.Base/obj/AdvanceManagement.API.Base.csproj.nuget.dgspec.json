@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Business\\AdvanceManagement.API.Business.csproj": {
                 "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.Business\\AdvanceManagement.API.Business.csproj"
+              },
+              "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataAccess\\AdvanceManagement.API.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Fatih\\source\\repos\\AdvanceManagement.API\\AdvanceManagement.API.DataAccess\\AdvanceManagement.API.DataAccess.csproj"
               }
             }
           }

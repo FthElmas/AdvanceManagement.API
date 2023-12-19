@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataTransferObjects\DTUnit\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AdvanceManagement.API.Core\AdvanceManagement.API.Core.csproj" />
   </ItemGroup>
 

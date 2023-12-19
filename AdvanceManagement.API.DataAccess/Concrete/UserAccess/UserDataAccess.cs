@@ -33,7 +33,7 @@ namespace AdvanceManagement.API.DataAccess.Concrete.UserAccess
                     CreatePassword(password, out passHash, out passSalt);
                     user.PasswordHash = passHash;
                     user.PasswordSalt = passSalt;
-                    string query = "INSERT INTO [User] (Username, PasswordHash, PasswordSalt , CreatedDate, IsActive) OUTPUT INSERTED.* VALUES (@userName, @passwordHash, @passwordSalt, @createdDate, @isActive)";
+                    string query = "INSERT INTO [User] (Username, PasswordHash, PasswordSalt , IsActive) OUTPUT INSERTED.* VALUES (@userName, @passwordHash, @passwordSalt, @isActive)";
                     string workerQuery = "INSERT INTO [Worker] (WorkerName, WorkerEmail, WorkerPhonenumber, UserID,IsActive) VALUES (@WorkerName, @WorkerEmail, @WorkerPhonenumber, @UserID,@IsActive)";
 
                     var data = await transaction.Connection.QueryFirstOrDefaultAsync<User>(query, new { userName = user.Username, passwordHash = user.PasswordHash, passwordSalt = user.PasswordSalt, createdDate = DateTime.Today, isActive = user.IsActive }, transaction);
@@ -66,13 +66,29 @@ namespace AdvanceManagement.API.DataAccess.Concrete.UserAccess
 
         }
 
+
+        public async Task<IEnumerable<PageAuthorization>> GetAllAuthorizationOfPerson(string username)
+        {
+            try
+            {
+                using var conn = _connectionHelper.CreateConnection();
+                string query = "select pa.* from PageAuthorization pa join RoleAuthorization ra ON ra.PageAuthorizationID = pa.PageAuthorizationID join Role r ON r.RoleID = ra.RoleID join [User] u ON u.RoleID = r.RoleID where u.Username = @Username";
+                return await conn.QueryAsync<PageAuthorization>(query, new { Username = username });
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+
         public User LoggedUser(string username)
         {
             try
             {
                 using var conn = _connectionHelper.CreateConnection();
-                string query = "select u.UserID, u.PasswordSalt, u.PasswordHash, u.Username, r.RoleID, r.RoleName from [User] as u\r\njoin [Role] r on r.RoleID = u.RoleID\r\nwhere Username = @Username";
-                return conn.Query<User, Role, User>(query, (u, r) => { u.Role = r; return u; }, new { Username = username }, splitOn: "RoleID").FirstOrDefault();
+                string query = "select u.*, r.* , w.* , t.* from [User] as u left join [Role] r on r.RoleID = u.RoleID join Worker w on w.UserID = u.UserID left join Title t on t.TitleID = w.TitleID where Username = @Username";
+                return conn.Query<User, Role, Worker, Title,User>(query, (u, r, w, t) => { u.Role = r; u.Worker = w; u.Title = t; return u; }, new { Username = username }, splitOn: "RoleID,WorkerID,TitleID").FirstOrDefault();
             }
             catch
             {

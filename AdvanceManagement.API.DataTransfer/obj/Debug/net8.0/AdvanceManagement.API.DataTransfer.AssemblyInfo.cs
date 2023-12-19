@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvanceManagement.API.DataTransfer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8924804f3d2e6f388bd230573048d36dc8db59e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e66210c5cd418d8c9c5302a57d249d724c6413f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvanceManagement.API.DataTransfer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvanceManagement.API.DataTransfer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

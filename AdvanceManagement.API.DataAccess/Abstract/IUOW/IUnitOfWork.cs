@@ -21,7 +21,7 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IUOW
 {
     public interface IUnitOfWork : IDisposable
     {
-        IAdvanceDataAccess AdvanceRepository { get; }
+        //IAdvanceDataAccess AdvanceRepository { get; }
         IAdvanceRequestStatusDataAccess AdvanceRequestStatusRepository { get; }
         IApprovalStatusDataAccess ApprovalStatusRepository { get; }
         IFinanceManagerDataAccess FinanceManagerRepository { get; }

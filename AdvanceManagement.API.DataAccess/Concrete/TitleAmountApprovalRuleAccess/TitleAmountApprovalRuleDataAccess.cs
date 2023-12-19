@@ -19,7 +19,7 @@ namespace AdvanceManagement.API.DataAccess.Concrete.TitleAmountApprovalRuleAcces
         {
             _connectionHelper = new ConnectionHelper();
         }
-        public async Task<IEnumerable<TitleAmountApprovalRule>> GetRuleAccordingToAmount(decimal amount)
+        public async Task<IEnumerable<TitleAmountApprovalRule>> GetRuleAccordingToAmount()
         {
             using var conn = _connectionHelper.CreateConnection();
 
@@ -41,10 +41,9 @@ namespace AdvanceManagement.API.DataAccess.Concrete.TitleAmountApprovalRuleAcces
             t.CreatedBy AS TitleCreatedBy
             FROM TitleAmountApprovalRule tar
             INNER JOIN Title t ON tar.TitleID = t.TitleID
-            WHERE tar.MinAmount < @MinAmount
         ";
 
-            var parameters = new { MinAmount = amount };
+
 
             return await conn.QueryAsync<TitleAmountApprovalRule, Title, TitleAmountApprovalRule>(
                 query,
@@ -53,7 +52,6 @@ namespace AdvanceManagement.API.DataAccess.Concrete.TitleAmountApprovalRuleAcces
                     tar.Title = title;
                     return tar;
                 },
-                parameters,
                 splitOn: "TitleID"
             );
         }

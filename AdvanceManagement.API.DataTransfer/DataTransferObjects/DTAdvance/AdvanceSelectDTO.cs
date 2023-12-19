@@ -6,10 +6,17 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvanceRequestStatus;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTFinanceManager;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTApprovalStatus;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTWorker;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTProject;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTTitle;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTUnit;
 
 namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvance
 {
-    public class AdvanceSelectDTO
+    public record AdvanceSelectDTO
     {
 
         public int AdvanceID { get; set; }
@@ -40,22 +47,28 @@ namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTAdvance
 
         #region References
         [NotMapped]
-        public AdvanceRequestStatus AdvanceRequestStatus { get; set; }
+        public AdvanceRequestStatusSelectDTO AdvanceRequestStatus { get; set; }
 
         [NotMapped]
-        public FinanceManager FinanceManager { get; set; }
+        public FinanceManagerSelectDTO FinanceManager { get; set; }
 
         [NotMapped]
-        public ApprovalStatus ApprovalStatus { get; set; }
+        public ApprovalStatusSelectDTO ApprovalStatus { get; set; }
 
         [NotMapped]
-        public Worker Worker { get; set; }
+        public WorkerSelectDTO Worker { get; set; }
+        [NotMapped]
+        public WorkerSelectDTO AdvanceWorker { get; set; }
 
         [NotMapped]
-        public Project Project { get; set; }
+        public ProjectSelectDTO Project { get; set; }
 
         [NotMapped]
-        public Title Title { get; set; }
+        public TitleSelectDTO Title { get; set; }
+        [NotMapped]
+        public TitleSelectDTO AdvanceTitle { get; set; }
+        [NotMapped]
+        public UnitSelectDTO Unit { get; set; }
         #endregion
     }
 }

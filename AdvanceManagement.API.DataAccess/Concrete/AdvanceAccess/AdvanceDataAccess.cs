@@ -18,15 +18,43 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess
     public class AdvanceDataAccess : BaseDataAccess<Advance>, IAdvanceDataAccess
     {
         private readonly ConnectionHelper _connectionHelper;
-        public AdvanceDataAccess()
+        private readonly ApprovalStateMachine stateMachine;
+    
+        public AdvanceDataAccess(ApprovalStateMachine stateMachine)
         {
             _connectionHelper = new ConnectionHelper();
+            this.stateMachine = stateMachine;
         }
+
+
+        public async Task<Advance> GetAdvanceByID(int advanceID)
+        {
+            using var conn = _connectionHelper.CreateConnection();
+            var query = "select a.*, w.*, t.*, u.*, p.* from Advance a\r\njoin Worker w ON w.WorkerID = a.WorkerID\r\njoin Title t ON t.TitleID = w.TitleID\r\njoin Unit u ON u.UnitID = w.UnitID\r\njoin Project p ON p.ProjectID = a.ProjectID\r\nwhere a.AdvanceID = @AdvanceID";
+
+            var parameters = new { AdvanceID = advanceID };
+
+            var result = await conn.QueryAsync<Advance, Worker, Title, Unit, Project, Advance>(query,
+                (a, w, t, u, p) =>
+                {
+                    a.Worker = w;
+                    a.Title = t;
+                    a.Unit = u;
+                    a.Project = p;
+                    return a;
+
+                },
+                parameters,
+                splitOn: "WorkerID,TitleID,UnitID,ProjectID");
+
+            return result.FirstOrDefault();
+        }
+
 
         public async Task<IEnumerable<Advance>> GetWorkerAdvance(int workerID)
         {
             using var conn = _connectionHelper.CreateConnection();
-            var advanceQuery = "select a.AdvanceAmount, a.CreatedDate, a.RequestDate, ar.AdvanceRequestStatusID,ar.StatusName,ar.ApprovedAmount ,p.ProjectID,p.ProjectName,fm.DeterminedPaymentDate,fm.AdvanceID as FMID, fm.WorkerID as FMWID , aps.ApprovalStatusID, aps.ApprovalName,w.WorkerID,w.WorkerName,t.TitleID ,t.TitleName from Advance a\r\njoin AdvanceRequestStatus ar on a.AdvanceID = ar.AdvanceID\r\njoin Project p on p.ProjectID = a.ProjectID\r\nleft join FinanceManager fm on fm.AdvanceID = a.AdvanceID\r\njoin ApprovalStatus aps on aps.ApprovalStatusID = ar.ApprovalStatusID\r\njoin Worker w on w.WorkerID = ar.ApprovingRejectedID\r\njoin Title t on w.TitleID = t.TitleID\r\nwhere a.WorkerID = @WorkerID";
+            var advanceQuery = "WITH CTE AS (\r\n    SELECT\r\n        a.AdvanceID,\r\n        ar.AdvanceRequestStatusID,\r\n        ar.CreatedDate,\r\n        ROW_NUMBER() OVER (PARTITION BY a.AdvanceID ORDER BY ar.CreatedDate DESC) AS RowNum\r\n    FROM Advance a\r\n    JOIN AdvanceRequestStatus ar ON a.AdvanceID = ar.AdvanceID\r\n    WHERE a.WorkerID = @WorkerID\r\n      AND ar.IsActive = 1\r\n)\r\nSELECT\r\n    a.*,\r\n    CTE.AdvanceID AS CTEAdvanceID,\r\n    ar.*,\r\n    p.*,\r\n    fm.DeterminedPaymentDate,\r\n    fm.AdvanceID AS FMID,\r\n    fm.WorkerID AS FMWID,\r\n    aps.ApprovalStatusID,\r\n    aps.ApprovalName,\r\n    w.*,  t.* FROM CTE\r\nJOIN Advance a ON CTE.AdvanceID = a.AdvanceID\r\nJOIN AdvanceRequestStatus ar ON CTE.AdvanceRequestStatusID = ar.AdvanceRequestStatusID\r\nJOIN Project p ON p.ProjectID = a.ProjectID\r\nLEFT JOIN FinanceManager fm ON fm.AdvanceID = a.AdvanceID\r\nJOIN ApprovalStatus aps ON aps.ApprovalStatusID = ar.ApprovalStatusID\r\nLEFT JOIN Worker w ON w.WorkerID = ar.ApprovingRejectedID\r\nLEFT JOIN Title t ON w.TitleID = t.TitleID\r\nWHERE CTE.RowNum = 1;";
 
             var parameters = new { WorkerID = workerID };
 
@@ -49,26 +77,68 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceAccess
 
         }
 
-        public async Task<bool> AddAdvanceWithStatus(Advance advance)
+
+        public async Task<IEnumerable<Advance>> BringAllAdvanceForFinance()
         {
             using var conn = _connectionHelper.CreateConnection();
-            ApprovalStateMachine stateMachine;
+            var advanceQuery = "SELECT A.*, ARS.*, P.*, APS.*,  WA.*, T.*, U.*\r\nFROM Advance A\r\nJOIN AdvanceRequestStatus ARS ON A.AdvanceID = ARS.AdvanceID\r\nJOIN Project P ON P.ProjectID = A.ProjectID\r\nJOIN ApprovalStatus APS ON APS.ApprovalStatusID = ARS.ApprovalStatusID\r\nLEFT JOIN Worker WA ON WA.WorkerID = A.WorkerID\r\nLEFT JOIN Title T ON WA.TitleID = T.TitleID\r\nLEFT JOIN Unit U ON U.UnitID = WA.UnitID\r\nWHERE AdvanceRequestStatusID = (\r\n        SELECT MAX(AdvanceRequestStatusID)\r\n        FROM AdvanceRequestStatus\r\n        WHERE AdvanceID = A.AdvanceID\r\n    ) AND StatusName = 'Onaylandı'";
+
+            return await conn.QueryAsync<Advance, AdvanceRequestStatus, Project, ApprovalStatus, Worker, Title, Unit, Advance>(advanceQuery,
+                (a, ar, p, aps, wa,t,u) =>
+                {
+                    a.AdvanceRequestStatus = ar;
+                    a.Project = p;
+                    a.ApprovalStatus = aps;
+                    a.AdvanceWorker = wa;
+                    a.Title = t;
+                    a.Unit = u;
+                    return a;
+
+                },
+                splitOn: "AdvanceRequestStatusID,ProjectID,ApprovalStatusID,WorkerID,TitleID, UnitID");
+        }
+
+
+        public async Task<IEnumerable<Advance>> BringAllAdvanceForAccountant()
+        {
+            using var conn = _connectionHelper.CreateConnection();
+            var advanceQuery = "SELECT a.*, w.*,t.*,u.*,p.* from Advance a\r\njoin Worker w ON w.WorkerID = a.WorkerID\r\njoin Title t ON t.TitleID = w.TitleID\r\njoin Unit u ON u.UnitID = w.UnitID\r\njoin Project p ON p.ProjectID = a.ProjectID\r\njoin FinanceManager fm ON a.AdvanceID = fm.AdvanceID\r\nleft join PaymentReceipt pr ON pr.AdvanceID = a.AdvanceID\r\nwhere pr.AdvanceID is null";
+
+            return await conn.QueryAsync<Advance, Worker, Title, Unit, Project, Advance>(advanceQuery,
+                (a, w, t, u, p) =>
+                {
+                    a.AdvanceWorker = w;
+                    a.Title = t;
+                    a.Unit = u;
+                    a.Project = p;
+                    return a;
+
+                },
+                splitOn: "WorkerID,TitleID,UnitID,ProjectID");
+        }
+
+        public async Task<bool> AddAdvanceWithStatus(Advance advance)
+        {
+            var conn = _connectionHelper.CreateConnection();
+            
             using(IDbTransaction transaction = conn.BeginTransaction())
             {
                 try
                 {
                     string advanceQuery = "insert into Advance (AdvanceAmount, AdvanceExplanation, WorkerID, RequestDate, AmountPaymentDate, ProjectID, IsActive) OUTPUT INSERTED.* values (@AdvanceAmount, @AdvanceExplanation, @WorkerID, @RequestDate, @AmountPaymentDate, @ProjectID, @IsActive)";
-                    stateMachine = new ApprovalStateMachine(transaction);
+                    
 
 
                     var data = await transaction.Connection.QueryFirstOrDefaultAsync<Advance>(advanceQuery, new { AdvanceAmount = advance.AdvanceAmount, AdvanceExplanation = advance.AdvanceExplanation, WorkerID = advance.WorkerID, RequestDate = advance.RequestDate, AmountPaymentDate = advance.AmountPaymentDate, ProjectID = advance.ProjectID, IsActive = advance.IsActive }, transaction);
                     var request = new AdvanceRequestStatus
                     {
                         AdvanceID = data.AdvanceID,
+                        StatusName = "Onay Bekliyor",
                         IsActive = false
                     };
-                    stateMachine.InitializeApprovalWorkflow(request, data.AdvanceAmount);
+                    stateMachine.InitializeApprovalWorkflow(request, data.AdvanceAmount, transaction);
                     
+
 
                     transaction.Commit();
                     return true;

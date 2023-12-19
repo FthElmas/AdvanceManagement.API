@@ -1,4 +1,5 @@
 ﻿using AdvanceManagement.API.Core.Entities;
+using AdvanceManagement.API.DataAccess.Abstract.IAdvanceRequestStatus;
 using AdvanceManagement.API.DataAccess.Concrete.AdvanceRequestStatusAccess;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,15 @@ namespace AdvanceManagement.API.DataAccess.Concrete.StatePattern.States
 {
     public class DirectorState : State
     {
-        AdvanceRequestStatusDataAccess _dal;
+        IAdvanceRequestStatusDataAccess _dal;
         AdvanceRequestStatus _advanceRequest;
         IDbTransaction dbTransaction;
-        public DirectorState(StateMachine stateMachine, AdvanceRequestStatus advanceRequest, IDbTransaction transaction) : base(stateMachine)
+
+        public DirectorState(StateMachine stateMachine, AdvanceRequestStatus advanceRequest, IDbTransaction transaction, IAdvanceRequestStatusDataAccess dal) : base(stateMachine)
         {
             _advanceRequest = advanceRequest;
             dbTransaction = transaction;
-            _dal = new AdvanceRequestStatusDataAccess();
+            _dal = dal;
         }
 
     

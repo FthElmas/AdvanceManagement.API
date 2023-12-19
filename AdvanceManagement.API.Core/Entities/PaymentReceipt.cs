@@ -20,7 +20,7 @@ namespace AdvanceManagement.API.Core.Entities
         [Column("ReceiptDescription")]
         public string ReceiptDescription { get; set; }
 
-        [ForeignKey("Advance")]
+
         public int AdvanceID { get; set; }
 
         [Column("IsActive")]

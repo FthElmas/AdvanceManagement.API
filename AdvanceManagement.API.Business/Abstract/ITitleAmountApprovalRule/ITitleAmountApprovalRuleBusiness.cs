@@ -9,6 +9,6 @@ namespace AdvanceManagement.API.Business.Abstract.ITitleAmountApprovalRule
 {
     public interface ITitleAmountApprovalRuleBusiness
     {
-        Task<IEnumerable<TitleAmountApprovalRuleSelectDTO>> GetRuleAccordingToAmount(decimal amount);
+        Task<IEnumerable<TitleAmountApprovalRuleSelectDTO>> GetRuleAccordingToAmount();
     }
 }

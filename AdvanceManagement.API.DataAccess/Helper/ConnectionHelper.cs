@@ -10,17 +10,23 @@ namespace AdvanceManagement.API.DataAccess.Helper
 {
     public class ConnectionHelper
     {
-        private IDbConnection _conf;
-        readonly string connectionString = "server = .; Database = AdvanceManagementDB; Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
+        private readonly string connectionString = "server = .; Database = AdvanceManagementDB; Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
+
         public ConnectionHelper()
         {
-
         }
 
         public IDbConnection CreateConnection()
         {
             var conn = new SqlConnection(connectionString);
             conn.Open();
+            return conn;
+        }
+
+        public async Task<IDbConnection> CreateConnectionAsync()
+        {
+            var conn = new SqlConnection(connectionString);
+            await conn.OpenAsync();
             return conn;
         }
 

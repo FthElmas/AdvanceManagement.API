@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AdvanceManagement.API.Business\AdvanceManagement.API.Business.csproj" />
+    <ProjectReference Include="..\AdvanceManagement.API.DataAccess\AdvanceManagement.API.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

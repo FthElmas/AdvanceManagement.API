@@ -12,28 +12,28 @@ namespace AdvanceManagement.API.Core.Entities
     public class Advance
     {
         [Key]
-        public int AdvanceID { get; set; }
+        public int? AdvanceID { get; set; }
         [Column("AdvanceAmount")]
-        public decimal AdvanceAmount { get; set; }
+        public decimal? AdvanceAmount { get; set; }
         [Column("AdvanceExplanation")]
-        public string AdvanceExplanation { get; set; }
+        public string? AdvanceExplanation { get; set; }
         [ForeignKey("Worker")]
-        public int WorkerID { get; set; }
+        public int? WorkerID { get; set; }
 
         [Column("RequestDate")]
-        public DateTime RequestDate { get; set; }
+        public DateTime? RequestDate { get; set; }
         [Column("AmountPaymentDate")]
-        public DateTime AmountPaymentDate { get; set; }
+        public DateTime? AmountPaymentDate { get; set; }
         [Column("PaybackDate")]
-        public DateTime PaybackDate { get; set; }
+        public DateTime? PaybackDate { get; set; }
         [ForeignKey("Project")]
-        public int ProjectID { get; set; }
+        public int? ProjectID { get; set; }
 
         [Column("CreatedDate")]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
         [Column("IsActive")]
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
 
 
@@ -52,10 +52,17 @@ namespace AdvanceManagement.API.Core.Entities
         public Worker Worker { get; set; }
 
         [NotMapped]
+        public Worker AdvanceWorker { get; set; }
+
+        [NotMapped]
         public Project Project { get; set; }
 
         [NotMapped]
         public Title Title { get; set; }
+        [NotMapped]
+        public Title AdvanceTitle { get; set; }
+        [NotMapped]
+        public Unit Unit { get; set; }
         #endregion
     }
 }

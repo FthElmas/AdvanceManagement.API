@@ -10,6 +10,6 @@ namespace AdvanceManagement.API.Business.Abstract.IProjectBusiness
 {
     public interface IProjectBusiness
     {
-        Task<IEnumerable<ProjectSelectDTO>> GetAllProjectOfWorker(int workerID);
+        Task<List<ProjectSelectDTO>> GetAllProjectOfWorker(int workerID);
     }
 }

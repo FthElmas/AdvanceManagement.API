@@ -10,6 +10,9 @@ namespace AdvanceManagement.API.Business.Abstract.IAdvanceRequestStatusBusiness
 {
     public interface IAdvanceRequestStatusBusiness
     {
-        
+        Task<List<AdvanceRequestStatusSelectDTO>> GetWorkerAdvance(int advanceID);
+        Task<List<AdvanceRequestStatusSelectDTO>> GetRequestWithTitle(int titleID);
+        Task<List<AdvanceRequestStatusSelectDTO>> GetRequestForUnitManager(int titleID);
+        Task<bool> UpdateAdvanceRequest(AdvanceRequestStatusUpdateDTO advance);
     }
 }

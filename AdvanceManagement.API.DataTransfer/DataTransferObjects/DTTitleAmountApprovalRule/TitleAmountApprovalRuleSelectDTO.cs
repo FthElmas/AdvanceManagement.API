@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AdvanceManagement.API.Core.Entities;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTTitle;
 
 namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTTitleAmountApprovalRule
 {
@@ -33,6 +34,6 @@ namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTTitleAmountAp
 
 
         [NotMapped]
-        public Title Title { get; set; }
+        public TitleSelectDTO Title { get; set; }
     }
 }

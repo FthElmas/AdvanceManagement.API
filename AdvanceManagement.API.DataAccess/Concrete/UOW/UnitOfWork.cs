@@ -39,7 +39,7 @@ namespace AdvanceManagement.API.DataAccess.Concrete.UOW
         private readonly IDbConnection _connection;
         private IDbTransaction _transaction;
 
-        public IAdvanceDataAccess AdvanceRepository => new AdvanceDataAccess();
+        //public IAdvanceDataAccess AdvanceRepository => new AdvanceDataAccess();
 
         public IAdvanceRequestStatusDataAccess AdvanceRequestStatusRepository => new AdvanceRequestStatusDataAccess();
 

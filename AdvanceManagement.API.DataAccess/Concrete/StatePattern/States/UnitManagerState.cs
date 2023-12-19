@@ -12,20 +12,21 @@ namespace AdvanceManagement.API.DataAccess.Concrete.StatePattern.States
 {
     public class UnitManagerState : State
     {
-        AdvanceRequestStatusDataAccess _dal;
+        IAdvanceRequestStatusDataAccess _dal;
         AdvanceRequestStatus _advanceRequest;
         IDbTransaction dbTransaction;
-        public UnitManagerState(StateMachine stateMachine, AdvanceRequestStatus advanceRequest, IDbTransaction dbTransaction) : base(stateMachine)
+        public UnitManagerState(StateMachine stateMachine, AdvanceRequestStatus advanceRequest, IDbTransaction dbTransaction, IAdvanceRequestStatusDataAccess dal) : base(stateMachine)
         {
-            _dal = new AdvanceRequestStatusDataAccess();
             _advanceRequest = advanceRequest;
             this.dbTransaction = dbTransaction;
+            _dal = dal;
         }
 
 
         public override async void EnterState()
         {
             base.EnterState();
+            _advanceRequest.IsActive = false;
             await _dal.AddAdvanceRequest(_advanceRequest, "Birim Müdürü Onayı", dbTransaction);
 
         }

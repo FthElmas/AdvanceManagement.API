@@ -11,6 +11,9 @@ namespace AdvanceManagement.API.DataAccess.Concrete.FinanceManagerAccess
 {
     public class FinanceManagerDataAccess : BaseDataAccess<FinanceManager> , IFinanceManagerDataAccess
     {
+        //public async Task<bool> InsertFinanceManager()
+        //{
 
+        //}
     }
 }

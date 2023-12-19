@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Abstract\IUOW\**" />
+    <Compile Remove="Concrete\UOW\**" />
+    <EmbeddedResource Remove="Abstract\IUOW\**" />
+    <EmbeddedResource Remove="Concrete\UOW\**" />
+    <None Remove="Abstract\IUOW\**" />
+    <None Remove="Concrete\UOW\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.24" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
   </ItemGroup>

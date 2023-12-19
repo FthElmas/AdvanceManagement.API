@@ -15,7 +15,7 @@ namespace AdvanceManagement.API.Core.Entities
         public int AdvanceRequestStatusID { get; set; }
 
         [ForeignKey("Advance")]
-        public int AdvanceID { get; set; }
+        public int? AdvanceID { get; set; }
 
         [Column("StatusName")]
         public string? StatusName { get; set; }
@@ -26,7 +26,7 @@ namespace AdvanceManagement.API.Core.Entities
         [Column("ApprovedAmount")]
         public decimal ApprovedAmount { get; set; }
 
-        [ForeignKey("Worker")]
+
         public int? ApprovingRejectedID { get; set; }
 
         [ForeignKey("ApprovalStatus")]
@@ -67,12 +67,16 @@ namespace AdvanceManagement.API.Core.Entities
 
         [NotMapped]
         public Worker Worker { get; set; }
+        [NotMapped]
+        public Worker AdvanceWorker { get; set; }
 
         [NotMapped]
         public Project Project { get; set; }
 
         [NotMapped]
         public Title Title { get; set; }
+        [NotMapped]
+        public Unit Unit { get; set; }
         #endregion
 
 

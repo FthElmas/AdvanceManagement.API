@@ -21,10 +21,8 @@ namespace AdvanceManagement.API.DataAccess.Concrete.ProjectAccess
         public async Task<IEnumerable<Project>> GetAllProjectOfWorker(int workerID)
         {
             using var conn = _connectionHelper.CreateConnection();
-            var query = "select Project.ProjectID, Project.ProjectName, Project.StartDate, Project.EndDate, Project.ProjectExplanation, Project.IsActive from Project" +
-                "join ProjectWorker on ProjectWorker.ProjectID = Project.ProjectID" +
-                "join Worker on ProjectWorker.WorkerID = Worker.WorkerID" +
-                "where WorkerID = @WorkerID";
+            var query = "select Project.ProjectID, Project.ProjectName, Project.StartDate, Project.EndDate, Project.ProjectExplanation, Project.IsActive from Project join [ProjectWorker] on ProjectWorker.ProjectID = Project.ProjectID join [Worker] on ProjectWorker.WorkerID = Worker.WorkerID  where [Worker].WorkerID = @WorkerID";
+
 
             return await conn.QueryAsync<Project>(query, new {WorkerID = workerID });
         }

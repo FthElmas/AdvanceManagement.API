@@ -14,23 +14,15 @@ namespace AdvanceManagement.API.Business.Concrete.TitleAmountApprovalRuleBusines
 {
     public class TitleAmountApprovalRuleBusiness(ITitleAmountApprovalRuleDataAccess dal) : ITitleAmountApprovalRuleBusiness
     {
-        public async Task<IEnumerable<TitleAmountApprovalRuleSelectDTO>> GetRuleAccordingToAmount(decimal amount)
+        public async Task<IEnumerable<TitleAmountApprovalRuleSelectDTO>> GetRuleAccordingToAmount()
         {
-            if(amount != 0)
-            {
-                var list = new List<TitleAmountApprovalRuleSelectDTO>();
-                var data = await dal.GetRuleAccordingToAmount(amount);
+            var data = await dal.GetRuleAccordingToAmount();
 
-                MyMapper<TitleAmountApprovalRule, TitleAmountApprovalRuleSelectDTO> mapper = new MyMapper<TitleAmountApprovalRule, TitleAmountApprovalRuleSelectDTO>();
+            MyMapper<TitleAmountApprovalRule, TitleAmountApprovalRuleSelectDTO> mapper = new MyMapper<TitleAmountApprovalRule, TitleAmountApprovalRuleSelectDTO>();
 
-                data.ToList().ForEach(a => list.Add(mapper.Map(a)));
 
-                return list;
-            }
-            else
-            {
-                throw new TitleAmountApprovalRuleAddException();
-            }
+
+            return mapper.MapList(data.ToList());
         }
     }
 }

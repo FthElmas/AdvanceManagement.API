@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AdvanceManagement.API.Business.Concrete.WorkerBusiness
 {
-    internal class WorkerBusiness
+    public class WorkerBusiness
     {
+
     }
 }

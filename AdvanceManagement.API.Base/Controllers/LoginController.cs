@@ -35,7 +35,10 @@ namespace AdvanceManagement.API.Base.Controllers
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name,dto.Username),
-                    new Claim(ClaimTypes.Role, doExists.Role.RoleName)
+                    new Claim(ClaimTypes.Role, doExists.RoleName),
+                    new Claim("TitleID", doExists.TitleID.ToString()),
+                    new Claim("WorkerID", doExists.WorkerID.ToString()),
+                    new Claim("WorkerName", doExists.WorkerName)
                 }),
                 Issuer = issuer,
                 Audience = audience,
@@ -51,10 +54,22 @@ namespace AdvanceManagement.API.Base.Controllers
         }
 
         [HttpPost("~/api/register")]
-        public async Task<IActionResult> Register([FromBody] LoginDTO loginDTO)
+        public async Task<IActionResult> Register([FromBody]RegisterDTO registerDTO)
         {
-            var data = await business.AddUser(loginDTO.User, loginDTO.Worker, loginDTO.User.Password);
+            var data = await business.AddUser(registerDTO.User, registerDTO.Worker, registerDTO.User.Password);
             return Ok(data);
+        }
+
+
+        [HttpGet("{username}")]
+        public async Task<IActionResult> GetAuthorization(string username)
+        {
+            var data = await business.GetAllAuthorizationOfPerson(username);
+
+            if (data != null)
+                return Ok(data);
+
+            return BadRequest();
         }
     }
 }

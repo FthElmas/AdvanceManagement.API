@@ -12,5 +12,8 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IAdvance
     {
         Task<IEnumerable<Advance>> GetWorkerAdvance(int workerID);
         Task<bool> AddAdvanceWithStatus(Advance advance);
+        Task<IEnumerable<Advance>> BringAllAdvanceForFinance();
+        Task<Advance> GetAdvanceByID(int advanceID);
+        Task<IEnumerable<Advance>> BringAllAdvanceForAccountant();
     }
 }

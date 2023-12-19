@@ -12,6 +12,6 @@ namespace AdvanceManagement.API.DataAccess.Abstract.IUser
         Task<User> AddUser(User user, Worker worker, string password);
         Task<User> Login(string username, string password);
         User LoggedUser(string username);
-
+        Task<IEnumerable<PageAuthorization>> GetAllAuthorizationOfPerson(string username);
     }
 }

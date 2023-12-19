@@ -16,9 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Abstract\IApprovalStatusBusiness\" />
-    <Folder Include="Abstract\IFinanceManagerBusiness\" />
     <Folder Include="Abstract\IPaybackReceiptBusiness\" />
-    <Folder Include="Abstract\IPaymentReceiptBusiness\" />
     <Folder Include="Abstract\ITitleBusiness\" />
     <Folder Include="Abstract\IUnitBusiness\" />
   </ItemGroup>

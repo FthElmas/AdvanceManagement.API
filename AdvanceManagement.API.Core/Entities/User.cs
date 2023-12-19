@@ -29,7 +29,8 @@ namespace AdvanceManagement.API.Core.Entities
         public bool? IsActive { get; set; }
 
 
-        public Role Role { get; set; }
-
+        public Role? Role { get; set; }
+        public Worker? Worker { get; set; }
+        public Title? Title { get; set; }
     }
 }

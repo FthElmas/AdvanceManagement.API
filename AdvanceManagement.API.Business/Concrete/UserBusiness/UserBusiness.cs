@@ -2,6 +2,7 @@
 using AdvanceManagement.API.Business.Extensions;
 using AdvanceManagement.API.Core.Entities;
 using AdvanceManagement.API.DataAccess.Abstract.IUser;
+using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTPageAuthorization;
 using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTUser;
 using AdvanceManagement.API.DataTransfer.DataTransferObjects.DTWorker;
 using AdvanceManagement.API.ExceptionHandling.Exceptions.User;
@@ -27,13 +28,13 @@ namespace AdvanceManagement.API.Business.Concrete.UserBusiness
             validateUser = new ValidateUser();
             validateWorker = new ValidateWorker();
         }
-        public async Task<bool> AddUser(UserDTO userDTO, WorkerAddDTO workerDTO, string password)
+        public async Task<bool> AddUser(UserAddDTO userDTO, WorkerAddDTO workerDTO, string password)
         {
-            MyMapper<UserDTO, User> userMapper = new MyMapper<UserDTO, User>();
+            MyMapper<UserAddDTO, User> userMapper = new MyMapper<UserAddDTO, User>();
             MyMapper<WorkerAddDTO, Worker> workerMapper = new MyMapper<WorkerAddDTO, Worker>();
 
             var worker = workerMapper.Map(workerDTO);
-            var user = userMapper.Map(userDTO);
+            var user = userMapper.MapProfile(userDTO);
 
             ValidationResult userResult = validateUser.Validate(user);
             ValidationResult workerResult = validateWorker.Validate(worker);
@@ -49,7 +50,18 @@ namespace AdvanceManagement.API.Business.Concrete.UserBusiness
             }
         }
 
-   
+        public async Task<List<PageAuthorizationSelectDTO>> GetAllAuthorizationOfPerson(string username)
+        {
+            if (username != string.Empty && username != null)
+            {
+                MyMapper<PageAuthorization, PageAuthorizationSelectDTO> mapper = new MyMapper<PageAuthorization, PageAuthorizationSelectDTO>();
+                var data = await _dal.GetAllAuthorizationOfPerson(username);
+
+                return mapper.MapList(data.ToList());
+            }
+            else
+                throw new Exception();
+        }
 
         public async Task<UserDTO> Login(string username, string password)
         {
@@ -57,7 +69,7 @@ namespace AdvanceManagement.API.Business.Concrete.UserBusiness
             {
                 var data = await _dal.Login(username, password);
                 MyMapper<User, UserDTO> mapper = new MyMapper<User, UserDTO>();
-                return mapper.Map(data);
+                return mapper.MapProfile(data);
             }
             else
             {
