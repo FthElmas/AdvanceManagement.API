@@ -1,0 +1,12 @@
+﻿C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentAdvanceRequestStatus\ValidateAdvanceRequestStatus.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentAdvance\ValidateAdvance.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentApprovalStatus\ValidateApprovalStatus.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentFinanceManager\ValidateFinanceManager.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentPaybackReceipt\ValidatePaybackReceipt.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentPaymentReceipt\ValidatePaymentReceipt.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentProject\ValidateProject.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentTitleAmountApprovalRule\ValidateTitleAmountApprovalRule.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentTitle\ValidateTitle.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentUnit\ValidateUnit.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentUser\ValidateUser.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\Handler\FluentWorker\ValidateWorker.cs

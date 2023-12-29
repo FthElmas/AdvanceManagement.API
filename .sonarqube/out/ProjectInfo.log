@@ -1,0 +1,31 @@
+Product projects
+---------------------------------------
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\AdvanceManagement.API.Core.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.ExceptionHandling\AdvanceManagement.API.ExceptionHandling.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataTransfer\AdvanceManagement.API.DataTransfer.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Validation\AdvanceManagement.API.Validation.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.DataAccess\AdvanceManagement.API.DataAccess.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Business\AdvanceManagement.API.Business.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Base\AdvanceManagement.API.Base.csproj
+
+
+Test projects
+---------------------------------------
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\AdvanceManagement.API.Caching.csproj
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\AdvanceManagement.API.Logging.csproj
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

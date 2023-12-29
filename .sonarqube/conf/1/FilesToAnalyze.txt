@@ -1,0 +1,17 @@
+﻿C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\Advance.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\AdvanceRequestStatus.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\ApprovalStatus.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\ApprovalStatusTitle.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\FinanceManager.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\PageAuthorization.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\PaybackReceipt.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\PaymentReceipt.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\Project.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\ProjectAdvance.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\ProjectWorker.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\Role.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\Title.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\TitleAmountApprovalRule.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\Unit.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\User.cs
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Core\Entities\Worker.cs

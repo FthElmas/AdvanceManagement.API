@@ -9,3 +9,4 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\refint\AdvanceManagement.API.Caching.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\ref\AdvanceManagement.API.Caching.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Caching\obj\Debug\net8.0\AdvanceManagement.API.Caching.sourcelink.json

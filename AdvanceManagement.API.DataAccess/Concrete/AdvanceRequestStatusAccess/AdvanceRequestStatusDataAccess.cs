@@ -19,7 +19,7 @@ namespace AdvanceManagement.API.DataAccess.Concrete.AdvanceRequestStatusAccess
         {
             using var conn = _connectionHelper.CreateConnection();
 
-            string query = "select  ar.* , a.*, p.*,fm.DeterminedPaymentDate,fm.AdvanceID as FMID, fm.WorkerID as FMWID , aps.*,w.*,t.* from AdvanceRequestStatus ar\r\njoin Advance a on a.AdvanceID = ar.AdvanceID\r\njoin Project p on p.ProjectID = a.ProjectID\r\nleft join FinanceManager fm on fm.AdvanceID = a.AdvanceID\r\njoin ApprovalStatus aps on aps.ApprovalStatusID = ar.ApprovalStatusID\r\nleft join Worker w on w.WorkerID = ar.ApprovingRejectedID\r\nleft join Title t on w.TitleID = t.TitleID\r\nwhere a.AdvanceID = @AdvanceID and ar.IsActive = 1";
+            string query = "select  ar.* , a.*, p.*,fm.DeterminedPaymentDate,fm.AdvanceID as FMID, fm.WorkerID as FMWID ,fm.DeterminedPaymentDate, aps.*,w.*,t.* from AdvanceRequestStatus ar\r\njoin Advance a on a.AdvanceID = ar.AdvanceID\r\njoin Project p on p.ProjectID = a.ProjectID\r\nleft join FinanceManager fm on fm.AdvanceID = a.AdvanceID\r\njoin ApprovalStatus aps on aps.ApprovalStatusID = ar.ApprovalStatusID\r\nleft join Worker w on w.WorkerID = ar.ApprovingRejectedID\r\nleft join Title t on w.TitleID = t.TitleID\r\nwhere a.AdvanceID = @AdvanceID and ar.IsActive = 1";
             var parameters = new { AdvanceID = advanceID };
 
             return await conn.QueryAsync<AdvanceRequestStatus, Advance, Project, FinanceManager, ApprovalStatus, Worker, Title, AdvanceRequestStatus>(query,

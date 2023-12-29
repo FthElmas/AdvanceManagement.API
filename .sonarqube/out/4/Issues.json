@@ -1,0 +1,2654 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Derleyicisi",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-3.23524.11 (f43cd10b)",
+        "semanticVersion": "4.8.0",
+        "language": "tr-TR"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TitleName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/TitleAmountDTO.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/TitleAmountDTO.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TitleDescription', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/TitleAmountDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/TitleAmountDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ApprovalName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusUpdateDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusUpdateDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'RoleName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTRole/RoleSelectDTO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTRole/RoleSelectDTO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Title', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitleAmountApprovalRule/TitleAmountApprovalRuleSelectDTO.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 31,
+                  "endLine": 37,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitleAmountApprovalRule/TitleAmountApprovalRuleSelectDTO.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 31,
+                  "endLine": 37,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ReceiptDescription', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptAddDTO.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptAddDTO.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'WorkerName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTWorker/WorkerSelectDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTWorker/WorkerSelectDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Advance', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 33,
+                  "endLine": 64,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 33,
+                  "endLine": 64,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'FinanceManager', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 40,
+                  "endLine": 68,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 40,
+                  "endLine": 68,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ApprovalStatus', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 40,
+                  "endLine": 71,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 40,
+                  "endLine": 71,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Worker', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 32,
+                  "endLine": 74,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 32,
+                  "endLine": 74,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Project', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 33,
+                  "endLine": 77,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 33,
+                  "endLine": 77,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Title', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 31,
+                  "endLine": 80,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 31,
+                  "endLine": 80,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ReceiptDescription', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptUpdateDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptUpdateDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ReceiptDescription', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptSelectDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptSelectDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ProjectName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'WorkerName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TitleName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 23,
+                  "endLine": 22,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 23,
+                  "endLine": 22,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'PageAuthorizationName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPageAuthorization/PageAuthorizationSelectDTO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPageAuthorization/PageAuthorizationSelectDTO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'PageAuthorizationPath', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPageAuthorization/PageAuthorizationSelectDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPageAuthorization/PageAuthorizationSelectDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ProjectName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTProject/ProjectSelectDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTProject/ProjectSelectDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ProjectExplanation', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTProject/ProjectSelectDTO.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTProject/ProjectSelectDTO.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ReceiptDescription', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaymentReceipt/PaymentReceiptAddDTO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaymentReceipt/PaymentReceiptAddDTO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ApprovalName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusAddDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusAddDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Advance', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 33,
+                  "endLine": 65,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 33,
+                  "endLine": 65,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'FinanceManager', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 40,
+                  "endLine": 69,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 40,
+                  "endLine": 69,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ApprovalStatus', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 40,
+                  "endLine": 72,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 40,
+                  "endLine": 72,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Worker', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 32,
+                  "endLine": 75,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 32,
+                  "endLine": 75,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'AdvanceWorker', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 32,
+                  "endLine": 77,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 32,
+                  "endLine": 77,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Project', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 33,
+                  "endLine": 80,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 33,
+                  "endLine": 80,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Title', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 31,
+                  "endLine": 83,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 31,
+                  "endLine": 83,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Unit', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 30,
+                  "endLine": 85,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 30,
+                  "endLine": 85,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'AdvanceExplanation', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'AdvanceRequestStatus', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 46,
+                  "endLine": 50,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 46,
+                  "endLine": 50,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'FinanceManager', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 40,
+                  "endLine": 53,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 40,
+                  "endLine": 53,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ApprovalStatus', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 40,
+                  "endLine": 56,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 40,
+                  "endLine": 56,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Worker', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 32,
+                  "endLine": 59,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 32,
+                  "endLine": 59,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'AdvanceWorker', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 32,
+                  "endLine": 61,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 32,
+                  "endLine": 61,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Project', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 33,
+                  "endLine": 64,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 33,
+                  "endLine": 64,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Title', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 31,
+                  "endLine": 67,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 31,
+                  "endLine": 67,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'AdvanceTitle', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 31,
+                  "endLine": 69,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 31,
+                  "endLine": 69,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Unit', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 30,
+                  "endLine": 71,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 30,
+                  "endLine": 71,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'UnitName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUnit/UnitSelectDTO.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUnit/UnitSelectDTO.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'UnitExplanation', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUnit/UnitSelectDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUnit/UnitSelectDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TitleName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleSelectDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleSelectDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TitleDescription', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleSelectDTO.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleSelectDTO.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'WorkerName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTWorker/WorkerAddDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTWorker/WorkerAddDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Username', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Password', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Role', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 30,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 30,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Worker', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 32,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 32,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'ApprovalName', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'PreviousAdvanceDetailDTO' to match pascal case naming rules, consider using 'PreviousAdvanceDetailDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDetailDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'AdvanceUpdateDTO' to match pascal case naming rules, consider using 'AdvanceUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 20,
+                  "endLine": 9,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2094",
+          "level": "warning",
+          "message": "Remove this empty class, write its code or make it an \"interface\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDetailDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2094",
+          "level": "warning",
+          "message": "Remove this empty class, write its code or make it an \"interface\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 20,
+                  "endLine": 9,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'TitleAmountDTO' to match pascal case naming rules, consider using 'TitleAmountDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/TitleAmountDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'AdvanceAddDTO' to match pascal case naming rules, consider using 'AdvanceAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceAddDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ErrorDTO' to match pascal case naming rules, consider using 'ErrorDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/ErrorDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'RegisterDTO' to match pascal case naming rules, consider using 'RegisterDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/RegisterDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'LoginDTO' to match pascal case naming rules, consider using 'LoginDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/LoginDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'FinanceManagerUpdateDTO' to match pascal case naming rules, consider using 'FinanceManagerUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTFinanceManager/FinanceManagerUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'FinanceManagerAddDTO' to match pascal case naming rules, consider using 'FinanceManagerAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTFinanceManager/FinanceManagerAddDTO.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'FinanceManagerSelectDTO' to match pascal case naming rules, consider using 'FinanceManagerSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTFinanceManager/FinanceManagerSelectDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'PageAuthorizationSelectDTO' to match pascal case naming rules, consider using 'PageAuthorizationSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPageAuthorization/PageAuthorizationSelectDTO.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'ApprovalStatusSelectDTO' to match pascal case naming rules, consider using 'ApprovalStatusSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'ApprovalStatusUpdateDTO' to match pascal case naming rules, consider using 'ApprovalStatusUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusUpdateDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'PaybackReceiptAddDTO' to match pascal case naming rules, consider using 'PaybackReceiptAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptAddDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'AdvanceSelectDTO' to match pascal case naming rules, consider using 'AdvanceSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvance/AdvanceSelectDTO.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 19,
+                  "endLine": 19,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'AdvanceRequestStatusAddDTO' to match pascal case naming rules, consider using 'AdvanceRequestStatusAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusAddDTO.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 19,
+                  "endLine": 18,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'AdvanceRequestStatusUpdateDTO' to match pascal case naming rules, consider using 'AdvanceRequestStatusUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusUpdateDTO.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 19,
+                  "endLine": 12,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'AdvanceRequestStatusSelectDTO' to match pascal case naming rules, consider using 'AdvanceRequestStatusSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTAdvanceRequestStatus/AdvanceRequestStatusSelectDTO.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 19,
+                  "endLine": 19,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'WorkerAddDTO' to match pascal case naming rules, consider using 'WorkerAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTWorker/WorkerAddDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'TitleAddDTO' to match pascal case naming rules, consider using 'TitleAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleAddDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2094",
+          "level": "warning",
+          "message": "Remove this empty record, write its code or make it an \"interface\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleAddDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'TitleAmountApprovalRuleSelectDTO' to match pascal case naming rules, consider using 'TitleAmountApprovalRuleSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitleAmountApprovalRule/TitleAmountApprovalRuleSelectDTO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'RoleSelectDTO' to match pascal case naming rules, consider using 'RoleSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTRole/RoleSelectDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'UnitSelectDTO' to match pascal case naming rules, consider using 'UnitSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUnit/UnitSelectDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'UserAddDTO' to match pascal case naming rules, consider using 'UserAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAddDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'PreviousAdvanceDTO' to match pascal case naming rules, consider using 'PreviousAdvanceDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/Complex/PreviousAdvanceDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'UserAuthDTO' to match pascal case naming rules, consider using 'UserAuthDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserAuthDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'UserDTO' to match pascal case naming rules, consider using 'UserDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTUser/UserDTO.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'TitleUpdateDTO' to match pascal case naming rules, consider using 'TitleUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2094",
+          "level": "warning",
+          "message": "Remove this empty record, write its code or make it an \"interface\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'WorkerSelectDTO' to match pascal case naming rules, consider using 'WorkerSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTWorker/WorkerSelectDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'ProjectSelectDTO' to match pascal case naming rules, consider using 'ProjectSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTProject/ProjectSelectDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'PaybackReceiptSelectDTO' to match pascal case naming rules, consider using 'PaybackReceiptSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptSelectDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'TitleSelectDTO' to match pascal case naming rules, consider using 'TitleSelectDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTTitle/TitleSelectDTO.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'PaymentReceiptAddDTO' to match pascal case naming rules, consider using 'PaymentReceiptAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaymentReceipt/PaymentReceiptAddDTO.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'ApprovalStatusAddDTO' to match pascal case naming rules, consider using 'ApprovalStatusAddDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTApprovalStatus/ApprovalStatusAddDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename record 'PaybackReceiptUpdateDTO' to match pascal case naming rules, consider using 'PaybackReceiptUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Fatih/source/repos/AdvanceManagement.API/AdvanceManagement.API.DataTransfer/DataTransferObjects/DTPaybackReceipt/PaybackReceiptUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Null atanamaz alan, oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. Alanı null atanabilir olarak bildirmeyi düşünün.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S101": {
+          "id": "S101",
+          "shortDescription": "Types should be named in PascalCase",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2094": {
+          "id": "S2094",
+          "shortDescription": "Classes should not be empty",
+          "fullDescription": "There is no good excuse for an empty class. If it’s being used simply as a common extension point, it should be replaced with an interface. If it was stubbed in as a placeholder for future development it should be fleshed-out. In any other case, it should be eliminated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2094",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

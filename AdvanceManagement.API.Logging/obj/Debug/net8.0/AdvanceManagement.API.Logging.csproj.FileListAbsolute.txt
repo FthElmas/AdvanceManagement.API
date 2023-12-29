@@ -9,3 +9,4 @@ C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\refint\AdvanceManagement.API.Logging.dll
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.pdb
 C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\ref\AdvanceManagement.API.Logging.dll
+C:\Users\Fatih\source\repos\AdvanceManagement.API\AdvanceManagement.API.Logging\obj\Debug\net8.0\AdvanceManagement.API.Logging.sourcelink.json

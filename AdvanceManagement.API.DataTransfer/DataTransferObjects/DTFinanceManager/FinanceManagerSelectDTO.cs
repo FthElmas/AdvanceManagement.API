@@ -12,7 +12,7 @@ namespace AdvanceManagement.API.DataTransfer.DataTransferObjects.DTFinanceManage
 
         public int AdvanceID { get; set; }
 
-        public DateTime DeterminedPaymentDate { get; set; }
+        public DateTime? DeterminedPaymentDate { get; set; }
 
         public bool IsActive { get; set; }
     }

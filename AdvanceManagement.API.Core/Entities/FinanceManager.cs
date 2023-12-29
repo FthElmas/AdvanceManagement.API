@@ -14,7 +14,7 @@ namespace AdvanceManagement.API.Core.Entities
 
         public int AdvanceID { get; set; }
         [Column("DeterminedPaymentDate")]
-        public DateTime DeterminedPaymentDate { get; set; }
+        public DateTime? DeterminedPaymentDate { get; set; }
         [Column("IsActive")]
         public bool IsActive { get; set; }
     }
